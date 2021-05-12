@@ -1,0 +1,2280 @@
+
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# g: http://base.google.com/ns/1.0#" xml:lang="pt-br" lang="pt-br">
+<head>
+    <script>!function(t){var e={};function r(n){if(e[n])return e[n].exports;var i=e[n]={i:n,l:!1,exports:{}};return t[n].call(i.exports,i,i.exports,r),i.l=!0,i.exports}r.m=t,r.c=e,r.d=function(t,e,n){r.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:n})},r.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},r.t=function(t,e){if(1&e&&(t=r(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var n=Object.create(null);if(r.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var i in t)r.d(n,i,function(e){return t[e]}.bind(null,i));return n},r.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return r.d(e,"a",e),e},r.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},r.p="https://static.todamateria.com.br/layout/assets/dist/",r(r.s=11)}({11:function(t,e,r){t.exports=r(12)},12:function(t,e){function r(t){if("undefined"==typeof Symbol||null==t[Symbol.iterator]){if(Array.isArray(t)||(t=function(t,e){if(!t)return;if("string"==typeof t)return n(t,e);var r=Object.prototype.toString.call(t).slice(8,-1);"Object"===r&&t.constructor&&(r=t.constructor.name);if("Map"===r||"Set"===r)return Array.from(r);if("Arguments"===r||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r))return n(t,e)}(t))){var e=0,r=function(){};return{s:r,n:function(){return e>=t.length?{done:!0}:{done:!1,value:t[e++]}},e:function(t){throw t},f:r}}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var i,a,o=!0,s=!1;return{s:function(){i=t[Symbol.iterator]()},n:function(){var t=i.next();return o=t.done,t},e:function(t){s=!0,a=t},f:function(){try{o||null==i.return||i.return()}finally{if(s)throw a}}}}function n(t,e){(null==e||e>t.length)&&(e=t.length);for(var r=0,n=new Array(e);r<e;r++)n[r]=t[r];return n}!function(){if("PerformanceLongTaskTiming"in window){var t=window.__tti={e:[]};t.o=new PerformanceObserver((function(e){t.e=t.e.concat(e.getEntries())})),t.o.observe({entryTypes:["longtask"]})}}(),window.sg_perf=window.performance&&performance.mark;try{window.sg_mtrc={};var i={};!function(t){var e,n=r(t);try{for(n.s();!(e=n.n()).done;){var a=e.value;i[a]=PerformanceObserver.supportedEntryTypes.includes(a)}}catch(t){n.e(t)}finally{n.f()}}(["resource","longtask","paint","largest-contentful-paint","navigation","first-input","layout-shift","measure"]),window.sg_mtrc.supported=i,sg_mtrc.resourcesTiming=[],sg_mtrc.sameSiteResourcesTiming=[],sg_mtrc.longtaskTiming=[],sg_mtrc.longTasks=[],sg_mtrc.slowServerTiming=[],sg_mtrc.slowServer=[],sg_mtrc.slowServer=[];var a=0;perfMetrics.onFirstInputDelay((function(t,e){sg_mtrc.FIDtarget=e.target.id.length>0?"#"+e.target.id:""+e.target.className.length>0?"."+e.target.className:""}));var o=new PerformanceObserver((function(t){var e,n=r(t.getEntries());try{for(n.s();!(e=n.n()).done;){var i=e.value;if("first-input"===i.entryType&&(sg_mtrc.FID=Math.round(i.processingStart-i.startTime)),"navigation"===i.entryType&&(sg_mtrc.navigationType=i.type,sg_mtrc.TTFB=Math.round(i.responseStart-i.requestStart),sg_mtrc.pageLoadTime=Math.round(i.loadEventEnd)),"largest-contentful-paint"===i.entryType&&(sg_mtrc.LCP=Math.round(i.renderTime||i.loadTime)),"paint"===i.entryType&&"first-contentful-paint"===i.name&&(sg_mtrc.FCP=Math.round(i.startTime+i.duration)),"longtask"===i.entryType){var o=Math.round(i.startTime).toString();Array.isArray(sg_mtrc.longtaskTiming[o])||(sg_mtrc.longtaskTiming[o]=[]),sg_mtrc.longtaskTiming[o]=i,sg_mtrc.longTasks.push({value:Math.round(i.startTime+i.duration),label:JSON.stringify(i.attribution)})}if("resource"===i.entryType){var s={name:i.name,end:Math.round(i.startTime+i.duration),duration:Math.round(i.duration),type:i.initiatorType};/^(http:\/\/static\.|https:\/\/static\.|http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?todamateria/m.test(i.name)&&sg_mtrc.sameSiteResourcesTiming.push(s);var u=Math.round(i.startTime).toString();Array.isArray(sg_mtrc.resourcesTiming[u])||(sg_mtrc.resourcesTiming[u]=[]),sg_mtrc.resourcesTiming[u].push(s),i.serverTiming&&i.duration>200&&(Array.isArray(sg_mtrc.slowServerTiming[u])||(sg_mtrc.slowServerTiming[u]=[]),sg_mtrc.slowServerTiming[u]=i,sg_mtrc.slowServer.push({value:Math.round(i.startTime+i.duration),label:i.name.length>60?i.name.substr(8,60)+" ...":i.name.substr(8)}))}"layout-shift"===i.entryType&&(i.hadRecentInput||(a+=i.value),sg_mtrc.CLS=a.toFixed(2)),"measure"===i.entryType&&(sg_mtrc[i.name+":duration"]=Math.round(i.duration),sg_mtrc[i.name]=Math.round(i.startTime))}}catch(t){n.e(t)}finally{n.f()}}));i.resource&&o.observe({type:["resource"],buffered:!0}),i.longtask&&o.observe({type:["longtask"],buffered:!0}),i.paint&&o.observe({type:["paint"],buffered:!0}),i["largest-contentful-paint"]&&o.observe({type:["largest-contentful-paint"],buffered:!0}),i.navigation&&o.observe({type:["navigation"],buffered:!0}),i["layout-shift"]&&o.observe({type:["layout-shift"],buffered:!0}),i["first-input"]&&o.observe({type:["first-input"],buffered:!0}),i.measure&&o.observe({type:["measure"],buffered:!0}),ttiPolyfill.getFirstConsistentlyInteractive().then((function(t){sg_mtrc.TTI=Math.round(t),sendAnaliticsPerformanceUserTiming("FCP",sg_mtrc.FCP,sg_mtrc.navigationType),sendAnaliticsPerformanceUserTiming("CLS",sg_mtrc.CLS,sg_mtrc.navigationType),sendAnaliticsPerformanceUserTiming("LCP",sg_mtrc.LCP,sg_mtrc.navigationType),sg_mtrc.FID>0&&sendAnaliticsPerformanceUserTiming("FID",sg_mtrc.FID,sg_mtrc.navigationType),o.takeRecords(),o.disconnect()})),window.sgPerformance=function(){return window.sg_mtrc.TTI?window.sg_mtrc:"Ainda não recolhemos o TTI, tente outra vez."}}catch(t){}function s(t,e){if(window.sg_perf){var r=e||"responseEnd",n=r+":"+t;if(performance.getEntriesByName(n)[0]){performance.clearMeasures(n),performance.measure(n,r,t);performance.getEntriesByName(n)[0]}}}window.onload=function(){s("img:visible"),s("css:end"),s("js:end")}}});</script>    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Tabela Periódica</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    
+    
+    <link rel="preload" href="https://static.todamateria.com.br/layout/assets/dist/fonts/tm.1681d4ce6f097d067b8f0c40ba371d8c.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" as="style"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap"><link rel="preload" href="https://static.todamateria.com.br/layout/assets/dist/css/main.48837e5b8c7f9264795a.css" as="style"><link rel="stylesheet" href="https://static.todamateria.com.br/layout/assets/dist/css/main.48837e5b8c7f9264795a.css"><link rel="preload" href="https://static.todamateria.com.br/layout/assets/dist/js/main.0985c7938d192bd4df11.js" as="script"><script defer="defer" src="https://static.todamateria.com.br/layout/assets/dist/js/main.0985c7938d192bd4df11.js"></script><link rel="preload" href="https://securepubads.g.doubleclick.net/tag/js/gpt.js" as="script"><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com/"><link rel="preconnect dns-prefetch" href="https://www.googletagmanager.com/"><link rel="preconnect dns-prefetch" href="https://fonts.googleapis.com/"><link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/"><link rel="preconnect dns-prefetch" href="https://static.todamateria.com.br/"><link rel="preconnect dns-prefetch" href="https://cdn.jsdelivr.net/"><link rel="preconnect dns-prefetch" href="https://cdn.ampproject.org/"><link rel="preconnect dns-prefetch" href="https://cdn.7gra.us/"><link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="preconnect" href="https://www.google-analytics.com/" crossorigin><link rel="preconnect" href="https://www.googletagmanager.com/" crossorigin><link rel="preconnect" href="https://static.todamateria.com.br/" crossorigin><link rel="preconnect" href="https://cdn.jsdelivr.net/" crossorigin><link rel="preconnect" href="https://cdn.ampproject.org/" crossorigin><link rel="preconnect" href="https://cdn.7gra.us/" crossorigin><link rel="preconnect dns-prefetch" href="https://stats.g.doubleclick.net/"><link rel="preconnect dns-prefetch" href="https://securepubads.g.doubleclick.net/"><link rel="preconnect dns-prefetch" href="https://cdn.taboola.com/"><link rel="preconnect dns-prefetch" href="https://www.googletagservices.com/"><link rel="preconnect dns-prefetch" href="https://trc.taboola.com/"><link rel="preconnect" href="https://stats.g.doubleclick.net/" crossorigin><link rel="preconnect" href="https://securepubads.g.doubleclick.net/" crossorigin><link rel="preconnect" href="https://cdn.taboola.com/" crossorigin><link rel="preconnect" href="https://www.googletagservices.com/" crossorigin><link rel="preconnect" href="https://trc.taboola.com/" crossorigin><script async defer="defer" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js"></script><script async defer="defer" src="https://cdn.jsdelivr.net/npm/in-view@0.6.1/dist/in-view.min.js"></script>
+
+
+
+</head>
+
+<body     class="article-body">
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZWVLMN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div style="max-height:50px;width:100%;z-index:2147483647;position:fixed;background:#fff url(https://cdn.7gra.us/gpt/loading.svg) center center/35px no-repeat;left:0;bottom:0;text-align:center;display:none;box-shadow:0 0 5px 0 rgba(0,0,0,0.2)">
+                   
+                    <div id="div-gpt-sg-e40840d205255b968bfdd8be19487cf8" class="ad-unit-sticky--footer"></div>
+                </div>
+    <div id="header">
+                <div class="container">
+            <div class="row">
+        		<div id="logo" class="col-sm-5 col-xs-8">
+                    <a href="/"><img width="347" height="51" src="https://static.todamateria.com.br/img/logo.png" srcset="https://static.todamateria.com.br/img/logo.png 1x, https://static.todamateria.com.br/img/logo@2x.png 2x" alt="TodaMatéria" title="TodaMatéria"></a>
+                </div>
+
+                <div class="visible-xs col-xs-4">
+                    <label class="show-menu" for="show-menu"><span>MENU</span><i></i></label>
+                </div>
+
+                <div class="col-sm-offset-1 col-sm-6 col-md-offset-3 col-md-4 col-xs-12" id="search-box">
+        			<form action="/" id="search-form" method="get">
+        				<input id="search-text" name="s"  type="text" placeholder="Busque um tema" value="" />
+                        <button id="search-button" type="submit" value="Buscar" title="Buscar"><i></i></button>
+        			</form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="checkbox" id="show-menu" class="hidden">
+    <div id="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="navbar-nav">
+                                                <li ><a title="Biologia" href="/biologia/"><span>Biologia</span></a></li>
+                                                <li ><a title="Filosofia" href="/filosofia/"><span>Filosofia</span></a></li>
+                                                <li ><a title="Física" href="/fisica/"><span>Física</span></a></li>
+                                                <li ><a title="Geografia" href="/geografia/"><span>Geografia</span></a></li>
+                                                <li ><a title="História" href="/historia/"><span>História</span></a></li>
+                                                <li ><a title="Língua Portuguesa" href="/lingua-portuguesa/"><span>Língua Portuguesa</span></a></li>
+                                                <li ><a title="Literatura" href="/literatura/"><span>Literatura</span></a></li>
+                                                <li ><a title="Matemática" href="/matematica/"><span>Matemática</span></a></li>
+                                                <li ><a title="Química" href="/quimica/"><span>Química</span></a></li>
+                                                <li ><a title="Inglês" href="/ingles/"><span>Inglês</span></a></li>
+                                                <li ><a title="ENEM" href="/enem/"><span>ENEM</span></a></li>
+                                                <li  class="all-cat"><a title="Todas as Matérias" href="/materias/"><span>Todas as Matérias</span></a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+<script type="application/ld+json">{"@context":"http://schema.org/","@type":"Article","inLanguage":"pt-BR","headline":"Tabela Peri\u00f3dica Completa e Atualizada 2021","description":"A Tabela Peri\u00f3dica agrupa todos os 118 elementos qu\u00edmicos, conforme as suas propriedades e em ordem crescente de n\u00famero at\u00f4mico. Saiba como os elementos s\u00e3o apresentados e a forma que se organizam em per\u00edodos e fam\u00edlias.","datePublished":"2013-08-16T11:37:56+0100","dateModified":"2021-03-18T06:47:02+0000","mainEntityOfPage":{"@type":"WebPage","@id":"/tabela-periodica/"},"publisher":{"@type":"Organization","name":"Toda Mat\u00e9ria","logo":{"@type":"ImageObject","url":"https://static.todamateria.com.br/img/logo-amp.png","width":600,"height":60}},"image":"https://static.todamateria.com.br/upload/ta/be/tabela-periodica-og.jpg","author":{"@type":"Person","name":"Carolina Batista","sameAs":"https://www.todamateria.com.br/autor/carolina-batista-da-silva/","jobTitle":"Professora de Qu\u00edmica"}}</script>
+    <div id="content" class="row" >
+                    <div class="col-xs-12">
+                    <ol id="breadcrumb" class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="/">
+                <span itemprop="name">Toda Matéria</span></a>
+            <meta itemprop="position" content="1"/>
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/quimica/"><span itemprop="name">Química</span></a><meta itemprop="position" content="2"/></li><li>&rsaquo;</li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/quimica/quimica-geral/"><span itemprop="name">Química Geral</span></a><meta itemprop="position" content="3"/></li>        </ol>
+
+        <h1 class="article-title">Tabela Periódica</h1>
+
+                        <div class="author-article author-article--t">
+                                            <div class="author-article--t__photo author-article--t__photo--circle">
+                            <img
+                                src="https://static.todamateria.com.br/img/autor/ca/ro/carolina-batista-da-silva_36.jpg"
+                                srcset="https://static.todamateria.com.br/img/autor/ca/ro/carolina-batista-da-silva_36.jpg, https://static.todamateria.com.br/img/autor/ca/ro/carolina-batista-da-silva_72.jpg 2x"
+                                width="36"
+                                height="36"
+                                alt="Carolina Batista"
+                                title="Carolina Batista"
+                                />
+                                <script>window.sg_perf && performance.mark('img:visible');</script>
+                        </div>
+                                        <div class="author-article--t__info ">
+                        <div class="author-article--t__info__name">
+                            Carolina Batista                        </div>
+                                                    <div class="author-article--t__info__job-title">Professora de Química</div>
+                                            </div>
+                </div>
+        
+
+<div id="tabela-periodica-container">
+    <div id="tabela-periodica">
+        <div class="tabela-wrapper">
+            <div class="scroll-area">
+                <div class="group_element" id="group_popup_panel">
+                    <div class="group_header_default" id="group_header">Tabela Periódica
+                        <div class="print_table"><a class="print_table_link" href="/tabela-periodica.pdf" title="Imprimir Tabela Periódica em PDF" target="_blank"><strong>Imprimir</strong> (PDF)</a></div>
+                    </div>
+                    <div class="mid_group_default" id="group_details">A Tabela Periódica é um modelo que agrupa todos os elementos químicos conhecidos e suas propriedades. Eles estão organizados em ordem crescente correspondente aos números atômicos (número de prótons).
+                    </div>
+                </div>
+                <div class="element_info" id="popup_container">
+                    <div class="element_header" id="popup_ename_big"></div>
+                    <div class="element_details">
+                        <div class="element_hover_details">
+                            <div class="element_hover_details_2">
+                                <div class="element_symbol" id="popup_symbol"></div>
+                                <div class="symbol_name" id="popup_ename"></div>
+                            </div>
+                            <div class="element_hover_details_1" id="popup_atomicno"></div>
+                            <div class="element_hover_details_3" id="popup_atomicmass"></div>
+                        </div>
+                        <div class="element_hover_data">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>Símbolo</td>
+                                    <td id="element_data_symbol"></td>
+                                </tr>
+                                <tr>
+                                    <td>Número atômico</td>
+                                    <td id="element_data_atomicnumber"></td>
+                                </tr>
+                                <tr>
+                                    <td>Massa atômica</td>
+                                    <td id="element_data_atomicmass"></td>
+                                </tr>
+                                <tr>
+                                    <td>Configuração eletrônica</td>
+                                    <td id="element_data_electconfig"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                                <div class="element_row">
+                                                                    <div id="element_1"
+                                 class="element e_7"
+                                 title="Hidrogênio"
+                                 data-name="Hidrogênio"
+                                 data-symbol="H"
+                                 data-atomicnumber="1"
+                                 data-atomicmass="1.008"
+                                 data-ec="1s<sup>1</sup>"
+                            >
+                                <div id="element_no_1" class="element_no">1</div>
+                                <div id="element_name_1" class="element_name">
+                                                                            H                                                                    </div>
+                            </div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div id="element_2"
+                                 class="element e_9"
+                                 title="Hélio"
+                                 data-name="Hélio"
+                                 data-symbol="He"
+                                 data-atomicnumber="2"
+                                 data-atomicmass="4.003"
+                                 data-ec="1s<sup>2</sup>"
+                            >
+                                <div id="element_no_2" class="element_no">2</div>
+                                <div id="element_name_2" class="element_name">
+                                                                            He                                                                    </div>
+                            </div>
+                                    </div>
+                                <div class="element_row">
+                                                                    <div id="element_3"
+                                 class="element e_1"
+                                 title="Lítio"
+                                 data-name="Lítio"
+                                 data-symbol="Li"
+                                 data-atomicnumber="3"
+                                 data-atomicmass="6.941"
+                                 data-ec="1s<sup>2</sup> 2s<sup>1</sup>"
+                            >
+                                <div id="element_no_3" class="element_no">3</div>
+                                <div id="element_name_3" class="element_name">
+                                                                            Li                                                                    </div>
+                            </div>
+                                                <div id="element_4"
+                                 class="element e_2"
+                                 title="Berílio"
+                                 data-name="Berílio"
+                                 data-symbol="Be"
+                                 data-atomicnumber="4"
+                                 data-atomicmass="9.012"
+                                 data-ec="1s<sup>2</sup> 2s<sup>2</sup>"
+                            >
+                                <div id="element_no_4" class="element_no">4</div>
+                                <div id="element_name_4" class="element_name">
+                                                                            Be                                                                    </div>
+                            </div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div id="element_5"
+                                 class="element e_10"
+                                 title="Boro"
+                                 data-name="Boro"
+                                 data-symbol="B"
+                                 data-atomicnumber="5"
+                                 data-atomicmass="10.811"
+                                 data-ec="1s<sup>2</sup> 2s<sup>2</sup> 2p¹"
+                            >
+                                <div id="element_no_5" class="element_no">5</div>
+                                <div id="element_name_5" class="element_name">
+                                                                            B                                                                    </div>
+                            </div>
+                                                <div id="element_6"
+                                 class="element e_7"
+                                 title="Carbono"
+                                 data-name="Carbono"
+                                 data-symbol="C"
+                                 data-atomicnumber="6"
+                                 data-atomicmass="12.011"
+                                 data-ec="1s<sup>2</sup> 2s<sup>2</sup> 2p²"
+                            >
+                                <div id="element_no_6" class="element_no">6</div>
+                                <div id="element_name_6" class="element_name">
+                                                                            C                                                                    </div>
+                            </div>
+                                                <div id="element_7"
+                                 class="element e_7"
+                                 title="Nitrogênio"
+                                 data-name="Nitrogênio"
+                                 data-symbol="N"
+                                 data-atomicnumber="7"
+                                 data-atomicmass="14.007"
+                                 data-ec="1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>3</sup>"
+                            >
+                                <div id="element_no_7" class="element_no">7</div>
+                                <div id="element_name_7" class="element_name">
+                                                                            N                                                                    </div>
+                            </div>
+                                                <div id="element_8"
+                                 class="element e_7"
+                                 title="Oxigênio"
+                                 data-name="Oxigênio"
+                                 data-symbol="O"
+                                 data-atomicnumber="8"
+                                 data-atomicmass="15.999"
+                                 data-ec="1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>4</sup>"
+                            >
+                                <div id="element_no_8" class="element_no">8</div>
+                                <div id="element_name_8" class="element_name">
+                                                                            O                                                                    </div>
+                            </div>
+                                                <div id="element_9"
+                                 class="element e_8"
+                                 title="Flúor"
+                                 data-name="Flúor"
+                                 data-symbol="F"
+                                 data-atomicnumber="9"
+                                 data-atomicmass="18.998"
+                                 data-ec="1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>5</sup>"
+                            >
+                                <div id="element_no_9" class="element_no">9</div>
+                                <div id="element_name_9" class="element_name">
+                                                                            F                                                                    </div>
+                            </div>
+                                                <div id="element_10"
+                                 class="element e_9"
+                                 title="Neônio"
+                                 data-name="Neônio"
+                                 data-symbol="Ne"
+                                 data-atomicnumber="10"
+                                 data-atomicmass="20.18"
+                                 data-ec="1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup>"
+                            >
+                                <div id="element_no_10" class="element_no">10</div>
+                                <div id="element_name_10" class="element_name">
+                                                                            Ne                                                                    </div>
+                            </div>
+                                    </div>
+                                <div class="element_row">
+                                                                    <div id="element_11"
+                                 class="element e_1"
+                                 title="Sódio"
+                                 data-name="Sódio"
+                                 data-symbol="Na"
+                                 data-atomicnumber="11"
+                                 data-atomicmass="22.99"
+                                 data-ec="[Ne] 3s<sup>1</sup>"
+                            >
+                                <div id="element_no_11" class="element_no">11</div>
+                                <div id="element_name_11" class="element_name">
+                                                                            Na                                                                    </div>
+                            </div>
+                                                <div id="element_12"
+                                 class="element e_2"
+                                 title="Magnésio"
+                                 data-name="Magnésio"
+                                 data-symbol="Mg"
+                                 data-atomicnumber="12"
+                                 data-atomicmass="24.305"
+                                 data-ec="[Ne] 3s<sup>2</sup>"
+                            >
+                                <div id="element_no_12" class="element_no">12</div>
+                                <div id="element_name_12" class="element_name">
+                                                                            Mg                                                                    </div>
+                            </div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div class="element_blank"></div>
+                                                <div id="element_13"
+                                 class="element e_4"
+                                 title="Alumínio"
+                                 data-name="Alumínio"
+                                 data-symbol="Al"
+                                 data-atomicnumber="13"
+                                 data-atomicmass="26.982"
+                                 data-ec="[Ne] 3s<sup>2</sup> 3p¹"
+                            >
+                                <div id="element_no_13" class="element_no">13</div>
+                                <div id="element_name_13" class="element_name">
+                                                                            Al                                                                    </div>
+                            </div>
+                                                <div id="element_14"
+                                 class="element e_10"
+                                 title="Silício"
+                                 data-name="Silício"
+                                 data-symbol="Si"
+                                 data-atomicnumber="14"
+                                 data-atomicmass="28.086"
+                                 data-ec="[Ne] 3s<sup>2</sup> 3p²"
+                            >
+                                <div id="element_no_14" class="element_no">14</div>
+                                <div id="element_name_14" class="element_name">
+                                                                            Si                                                                    </div>
+                            </div>
+                                                <div id="element_15"
+                                 class="element e_7"
+                                 title="Fósforo"
+                                 data-name="Fósforo"
+                                 data-symbol="P"
+                                 data-atomicnumber="15"
+                                 data-atomicmass="30.974"
+                                 data-ec="[Ne] 3s<sup>2</sup> 3p<sup>3</sup>"
+                            >
+                                <div id="element_no_15" class="element_no">15</div>
+                                <div id="element_name_15" class="element_name">
+                                                                            P                                                                    </div>
+                            </div>
+                                                <div id="element_16"
+                                 class="element e_7"
+                                 title="Enxofre"
+                                 data-name="Enxofre"
+                                 data-symbol="S"
+                                 data-atomicnumber="16"
+                                 data-atomicmass="32.065"
+                                 data-ec="[Ne] 3s<sup>2</sup> 3p<sup>4</sup>"
+                            >
+                                <div id="element_no_16" class="element_no">16</div>
+                                <div id="element_name_16" class="element_name">
+                                                                            S                                                                    </div>
+                            </div>
+                                                <div id="element_17"
+                                 class="element e_8"
+                                 title="Cloro"
+                                 data-name="Cloro"
+                                 data-symbol="Cl"
+                                 data-atomicnumber="17"
+                                 data-atomicmass="35.453"
+                                 data-ec="[Ne] 3s<sup>2</sup> 3p<sup>5</sup>"
+                            >
+                                <div id="element_no_17" class="element_no">17</div>
+                                <div id="element_name_17" class="element_name">
+                                                                            Cl                                                                    </div>
+                            </div>
+                                                <div id="element_18"
+                                 class="element e_9"
+                                 title="Argônio"
+                                 data-name="Argônio"
+                                 data-symbol="Ar"
+                                 data-atomicnumber="18"
+                                 data-atomicmass="39.948"
+                                 data-ec="[Ne] 3s<sup>2</sup> 3p<sup>6</sup>"
+                            >
+                                <div id="element_no_18" class="element_no">18</div>
+                                <div id="element_name_18" class="element_name">
+                                                                            Ar                                                                    </div>
+                            </div>
+                                    </div>
+                                <div class="element_row">
+                                                                    <div id="element_19"
+                                 class="element e_1"
+                                 title="Potássio"
+                                 data-name="Potássio"
+                                 data-symbol="K"
+                                 data-atomicnumber="19"
+                                 data-atomicmass="39.098"
+                                 data-ec="[Ar] 4s<sup>1</sup>"
+                            >
+                                <div id="element_no_19" class="element_no">19</div>
+                                <div id="element_name_19" class="element_name">
+                                                                            K                                                                    </div>
+                            </div>
+                                                <div id="element_20"
+                                 class="element e_2"
+                                 title="Cálcio"
+                                 data-name="Cálcio"
+                                 data-symbol="Ca"
+                                 data-atomicnumber="20"
+                                 data-atomicmass="40.078"
+                                 data-ec="[Ar] 4s<sup>2</sup>"
+                            >
+                                <div id="element_no_20" class="element_no">20</div>
+                                <div id="element_name_20" class="element_name">
+                                                                            Ca                                                                    </div>
+                            </div>
+                                                <div id="element_21"
+                                 class="element e_3"
+                                 title="Escândio"
+                                 data-name="Escândio"
+                                 data-symbol="Sc"
+                                 data-atomicnumber="21"
+                                 data-atomicmass="44.956"
+                                 data-ec="[Ar] 3d¹ 4s<sup>2</sup>"
+                            >
+                                <div id="element_no_21" class="element_no">21</div>
+                                <div id="element_name_21" class="element_name">
+                                                                            Sc                                                                    </div>
+                            </div>
+                                                <div id="element_22"
+                                 class="element e_3"
+                                 title="Titânio"
+                                 data-name="Titânio"
+                                 data-symbol="Ti"
+                                 data-atomicnumber="22"
+                                 data-atomicmass="47.867"
+                                 data-ec="[Ar] 3d² 4s<sup>2</sup>"
+                            >
+                                <div id="element_no_22" class="element_no">22</div>
+                                <div id="element_name_22" class="element_name">
+                                                                            Ti                                                                    </div>
+                            </div>
+                                                <div id="element_23"
+                                 class="element e_3"
+                                 title="Vanádio"
+                                 data-name="Vanádio"
+                                 data-symbol="V"
+                                 data-atomicnumber="23"
+                                 data-atomicmass="50.942"
+                                 data-ec="[Ar] 3d<sup>3</sup> 4s<sup>2</sup>"
+                            >
+                                <div id="element_no_23" class="element_no">23</div>
+                                <div id="element_name_23" class="element_name">
+                                                                            V                                                                    </div>
+                            </div>
+                                                <div id="element_24"
+                                 class="element e_3"
+                                 title="Cromo"
+                                 data-name="Cromo"
+                                 data-symbol="Cr"
+                                 data-atomicnumber="24"
+                                 data-atomicmass="51.996"
+                                 data-ec="[Ar] 3d<sup>4</sup> 4s<sup>2</sup>"
+                            >
+                                <div id="element_no_24" class="element_no">24</div>
+                                <div id="element_name_24" class="element_name">
+                                                                            Cr                                                                    </div>
+                            </div>
+                                                <div id="element_25"
+                                 class="element e_3"
+                                 title="Manganês"
+                                 data-name="Manganês"
+                                 data-symbol="Mn"
+                                 data-atomicnumber="25"
+                                 data-atomicmass="54.938"
+                                 data-ec="[Ar] 3d<sup>5</sup> 4s<sup>2</sup>"
+                            >
+                                <div id="element_no_25" class="element_no">25</div>
+                                <div id="element_name_25" class="element_name">
+                                                                            Mn                                                                    </div>
+                            </div>
+                                                <div id="element_26"
+                                 class="element e_3"
+                                 title="Ferro"
+                                 data-name="Ferro"
+                                 data-symbol="Fe"
+                                 data-atomicnumber="26"
+                                 data-atomicmass="55.845"
+                                 data-ec="[Ar] 3d<sup>6</sup> 4s<sup>2</sup>"
+                            >
+                                <div id="element_no_26" class="element_no">26</div>
+                                <div id="element_name_26" class="element_name">
+                                                                            Fe                                                                    </div>
+                            </div>
+                                                <div id="element_27"
+                                 class="element e_3"
+                                 title="Cobalto"
+                                 data-name="Cobalto"
+                                 data-symbol="Co"
+                                 data-atomicnumber="27"
+                                 data-atomicmass="58.933"
+                                 data-ec="[Ar] 3d<sup>7</sup> 4s<sup>2</sup>"
+                            >
+                                <div id="element_no_27" class="element_no">27</div>
+                                <div id="element_name_27" class="element_name">
+                                                                            Co                                                                    </div>
+                            </div>
+                                                <div id="element_28"
+                                 class="element e_3"
+                                 title="Níquel"
+                                 data-name="Níquel"
+                                 data-symbol="Ni"
+                                 data-atomicnumber="28"
+                                 data-atomicmass="58.693"
+                                 data-ec="[Ar] 3d<sup>8</sup> 4s<sup>2</sup>"
+                            >
+                                <div id="element_no_28" class="element_no">28</div>
+                                <div id="element_name_28" class="element_name">
+                                                                            Ni                                                                    </div>
+                            </div>
+                                                <div id="element_29"
+                                 class="element e_3"
+                                 title="Cobre"
+                                 data-name="Cobre"
+                                 data-symbol="Cu"
+                                 data-atomicnumber="29"
+                                 data-atomicmass="63.546"
+                                 data-ec="[Ar] 3d<sup>9</sup> 4s<sup>2</sup>"
+                            >
+                                <div id="element_no_29" class="element_no">29</div>
+                                <div id="element_name_29" class="element_name">
+                                                                            Cu                                                                    </div>
+                            </div>
+                                                <div id="element_30"
+                                 class="element e_3"
+                                 title="Zinco"
+                                 data-name="Zinco"
+                                 data-symbol="Zn"
+                                 data-atomicnumber="30"
+                                 data-atomicmass="65.409"
+                                 data-ec="[Ar] 3d<sup>10</sup> 4s<sup>2</sup>"
+                            >
+                                <div id="element_no_30" class="element_no">30</div>
+                                <div id="element_name_30" class="element_name">
+                                                                            Zn                                                                    </div>
+                            </div>
+                                                <div id="element_31"
+                                 class="element e_4"
+                                 title="Gálio"
+                                 data-name="Gálio"
+                                 data-symbol="Ga"
+                                 data-atomicnumber="31"
+                                 data-atomicmass="69.723"
+                                 data-ec="[Ar] 3d<sup>10</sup> 4s<sup>2</sup> 4p¹"
+                            >
+                                <div id="element_no_31" class="element_no">31</div>
+                                <div id="element_name_31" class="element_name">
+                                                                            Ga                                                                    </div>
+                            </div>
+                                                <div id="element_32"
+                                 class="element e_10"
+                                 title="Germânio"
+                                 data-name="Germânio"
+                                 data-symbol="Ge"
+                                 data-atomicnumber="32"
+                                 data-atomicmass="72.64"
+                                 data-ec="[Ar] 3d<sup>10</sup> 4s<sup>2</sup> 4p²"
+                            >
+                                <div id="element_no_32" class="element_no">32</div>
+                                <div id="element_name_32" class="element_name">
+                                                                            Ge                                                                    </div>
+                            </div>
+                                                <div id="element_33"
+                                 class="element e_10"
+                                 title="Arsênio"
+                                 data-name="Arsênio"
+                                 data-symbol="As"
+                                 data-atomicnumber="33"
+                                 data-atomicmass="74.922"
+                                 data-ec="[Ar] 3d<sup>10</sup> 4s<sup>2</sup> 4p<sup>3</sup>"
+                            >
+                                <div id="element_no_33" class="element_no">33</div>
+                                <div id="element_name_33" class="element_name">
+                                                                            As                                                                    </div>
+                            </div>
+                                                <div id="element_34"
+                                 class="element e_7"
+                                 title="Selênio"
+                                 data-name="Selênio"
+                                 data-symbol="Se"
+                                 data-atomicnumber="34"
+                                 data-atomicmass="78.96"
+                                 data-ec="[Ar] 3d<sup>10</sup> 4s<sup>2</sup> 4p<sup>4</sup>"
+                            >
+                                <div id="element_no_34" class="element_no">34</div>
+                                <div id="element_name_34" class="element_name">
+                                                                            Se                                                                    </div>
+                            </div>
+                                                <div id="element_35"
+                                 class="element e_8"
+                                 title="Bromo"
+                                 data-name="Bromo"
+                                 data-symbol="Br"
+                                 data-atomicnumber="35"
+                                 data-atomicmass="79.904"
+                                 data-ec="[Ar] 3d<sup>10</sup> 4s<sup>2</sup> 4p<sup>5</sup>"
+                            >
+                                <div id="element_no_35" class="element_no">35</div>
+                                <div id="element_name_35" class="element_name">
+                                                                            Br                                                                    </div>
+                            </div>
+                                                <div id="element_36"
+                                 class="element e_9"
+                                 title="Criptônio"
+                                 data-name="Criptônio"
+                                 data-symbol="Kr"
+                                 data-atomicnumber="36"
+                                 data-atomicmass="83.798"
+                                 data-ec="[Ar] 3d<sup>10</sup> 4s<sup>2</sup> 4p<sup>6</sup>"
+                            >
+                                <div id="element_no_36" class="element_no">36</div>
+                                <div id="element_name_36" class="element_name">
+                                                                            Kr                                                                    </div>
+                            </div>
+                                    </div>
+                                <div class="element_row">
+                                                                    <div id="element_37"
+                                 class="element e_1"
+                                 title="Rubídio"
+                                 data-name="Rubídio"
+                                 data-symbol="Rb"
+                                 data-atomicnumber="37"
+                                 data-atomicmass="85.468"
+                                 data-ec="[Kr] 5s<sup>1</sup>"
+                            >
+                                <div id="element_no_37" class="element_no">37</div>
+                                <div id="element_name_37" class="element_name">
+                                                                            Rb                                                                    </div>
+                            </div>
+                                                <div id="element_38"
+                                 class="element e_2"
+                                 title="Estrôncio"
+                                 data-name="Estrôncio"
+                                 data-symbol="Sr"
+                                 data-atomicnumber="38"
+                                 data-atomicmass="87.62"
+                                 data-ec="[Kr] 5s<sup>2</sup>"
+                            >
+                                <div id="element_no_38" class="element_no">38</div>
+                                <div id="element_name_38" class="element_name">
+                                                                            Sr                                                                    </div>
+                            </div>
+                                                <div id="element_39"
+                                 class="element e_3"
+                                 title="Ítrio"
+                                 data-name="Ítrio"
+                                 data-symbol="Y"
+                                 data-atomicnumber="39"
+                                 data-atomicmass="88.906"
+                                 data-ec="[Kr] 4d¹ 5s<sup>2</sup>"
+                            >
+                                <div id="element_no_39" class="element_no">39</div>
+                                <div id="element_name_39" class="element_name">
+                                                                            Y                                                                    </div>
+                            </div>
+                                                <div id="element_40"
+                                 class="element e_3"
+                                 title="Zircônio"
+                                 data-name="Zircônio"
+                                 data-symbol="Zr"
+                                 data-atomicnumber="40"
+                                 data-atomicmass="91.224"
+                                 data-ec="[Kr] 4d² 5s<sup>2</sup>"
+                            >
+                                <div id="element_no_40" class="element_no">40</div>
+                                <div id="element_name_40" class="element_name">
+                                                                            Zr                                                                    </div>
+                            </div>
+                                                <div id="element_41"
+                                 class="element e_3"
+                                 title="Nióbio"
+                                 data-name="Nióbio"
+                                 data-symbol="Nb"
+                                 data-atomicnumber="41"
+                                 data-atomicmass="92.906 38"
+                                 data-ec="[Kr] 4d<sup>3</sup> 5s<sup>2</sup>"
+                            >
+                                <div id="element_no_41" class="element_no">41</div>
+                                <div id="element_name_41" class="element_name">
+                                                                            Nb                                                                    </div>
+                            </div>
+                                                <div id="element_42"
+                                 class="element e_3"
+                                 title="Molibdênio"
+                                 data-name="Molibdênio"
+                                 data-symbol="Mo"
+                                 data-atomicnumber="42"
+                                 data-atomicmass="95.94"
+                                 data-ec="[Kr] 4d<sup>4</sup> 5s<sup>2</sup>"
+                            >
+                                <div id="element_no_42" class="element_no">42</div>
+                                <div id="element_name_42" class="element_name">
+                                                                            Mo                                                                    </div>
+                            </div>
+                                                <div id="element_43"
+                                 class="element e_3"
+                                 title="Tecnécio"
+                                 data-name="Tecnécio"
+                                 data-symbol="Tc"
+                                 data-atomicnumber="43"
+                                 data-atomicmass="[98]"
+                                 data-ec="[Kr] 4d<sup>5</sup> 5s<sup>2</sup>"
+                            >
+                                <div id="element_no_43" class="element_no">43</div>
+                                <div id="element_name_43" class="element_name">
+                                                                            Tc                                                                    </div>
+                            </div>
+                                                <div id="element_44"
+                                 class="element e_3"
+                                 title="Rutênio"
+                                 data-name="Rutênio"
+                                 data-symbol="Ru"
+                                 data-atomicnumber="44"
+                                 data-atomicmass="101.07"
+                                 data-ec="[Kr] 4d<sup>6</sup> 5s<sup>2</sup>"
+                            >
+                                <div id="element_no_44" class="element_no">44</div>
+                                <div id="element_name_44" class="element_name">
+                                                                            Ru                                                                    </div>
+                            </div>
+                                                <div id="element_45"
+                                 class="element e_3"
+                                 title="Ródio"
+                                 data-name="Ródio"
+                                 data-symbol="Rh"
+                                 data-atomicnumber="45"
+                                 data-atomicmass="102.905 50"
+                                 data-ec="[Kr] 4d<sup>7</sup> 5s<sup>2</sup>"
+                            >
+                                <div id="element_no_45" class="element_no">45</div>
+                                <div id="element_name_45" class="element_name">
+                                                                            Rh                                                                    </div>
+                            </div>
+                                                <div id="element_46"
+                                 class="element e_3"
+                                 title="Paládio"
+                                 data-name="Paládio"
+                                 data-symbol="Pd"
+                                 data-atomicnumber="46"
+                                 data-atomicmass="106.42"
+                                 data-ec="[Kr] 4d<sup>8</sup> 5s<sup>2</sup>"
+                            >
+                                <div id="element_no_46" class="element_no">46</div>
+                                <div id="element_name_46" class="element_name">
+                                                                            Pd                                                                    </div>
+                            </div>
+                                                <div id="element_47"
+                                 class="element e_3"
+                                 title="Prata"
+                                 data-name="Prata"
+                                 data-symbol="Ag"
+                                 data-atomicnumber="47"
+                                 data-atomicmass="107.868"
+                                 data-ec="[Kr] 4d<sup>9</sup> 5s<sup>2</sup>"
+                            >
+                                <div id="element_no_47" class="element_no">47</div>
+                                <div id="element_name_47" class="element_name">
+                                                                            Ag                                                                    </div>
+                            </div>
+                                                <div id="element_48"
+                                 class="element e_3"
+                                 title="Cádmio"
+                                 data-name="Cádmio"
+                                 data-symbol="Cd"
+                                 data-atomicnumber="48"
+                                 data-atomicmass="112.411"
+                                 data-ec="[Kr] 4d<sup>10</sup> 5s<sup>2</sup>"
+                            >
+                                <div id="element_no_48" class="element_no">48</div>
+                                <div id="element_name_48" class="element_name">
+                                                                            Cd                                                                    </div>
+                            </div>
+                                                <div id="element_49"
+                                 class="element e_4"
+                                 title="Índio"
+                                 data-name="Índio"
+                                 data-symbol="In"
+                                 data-atomicnumber="49"
+                                 data-atomicmass="114.818"
+                                 data-ec="[Kr] 4d<sup>10</sup> 5s<sup>2</sup> 5p¹"
+                            >
+                                <div id="element_no_49" class="element_no">49</div>
+                                <div id="element_name_49" class="element_name">
+                                                                            In                                                                    </div>
+                            </div>
+                                                <div id="element_50"
+                                 class="element e_4"
+                                 title="Estanho"
+                                 data-name="Estanho"
+                                 data-symbol="Sn"
+                                 data-atomicnumber="50"
+                                 data-atomicmass="118.71"
+                                 data-ec="[Kr] 4d<sup>10</sup> 5s<sup>2</sup> 5p²"
+                            >
+                                <div id="element_no_50" class="element_no">50</div>
+                                <div id="element_name_50" class="element_name">
+                                                                            Sn                                                                    </div>
+                            </div>
+                                                <div id="element_51"
+                                 class="element e_10"
+                                 title="Antimônio"
+                                 data-name="Antimônio"
+                                 data-symbol="Sb"
+                                 data-atomicnumber="51"
+                                 data-atomicmass="121.76"
+                                 data-ec="[Kr] 4d<sup>10</sup> 5s<sup>2</sup> 5p<sup>3</sup>"
+                            >
+                                <div id="element_no_51" class="element_no">51</div>
+                                <div id="element_name_51" class="element_name">
+                                                                            Sb                                                                    </div>
+                            </div>
+                                                <div id="element_52"
+                                 class="element e_10"
+                                 title="Telúrio"
+                                 data-name="Telúrio"
+                                 data-symbol="Te"
+                                 data-atomicnumber="52"
+                                 data-atomicmass="128.6"
+                                 data-ec="[Kr] 4d<sup>10</sup> 5s<sup>2</sup> 5p<sup>4</sup>"
+                            >
+                                <div id="element_no_52" class="element_no">52</div>
+                                <div id="element_name_52" class="element_name">
+                                                                            Te                                                                    </div>
+                            </div>
+                                                <div id="element_53"
+                                 class="element e_8"
+                                 title="Iodo"
+                                 data-name="Iodo"
+                                 data-symbol="I"
+                                 data-atomicnumber="53"
+                                 data-atomicmass="126.904 47"
+                                 data-ec="[Kr] 4d<sup>10</sup> 5s<sup>2</sup> 5p<sup>5</sup>"
+                            >
+                                <div id="element_no_53" class="element_no">53</div>
+                                <div id="element_name_53" class="element_name">
+                                                                            I                                                                    </div>
+                            </div>
+                                                <div id="element_54"
+                                 class="element e_9"
+                                 title="Xenônio"
+                                 data-name="Xenônio"
+                                 data-symbol="Xe"
+                                 data-atomicnumber="54"
+                                 data-atomicmass="131.293"
+                                 data-ec="[Kr] 4d<sup>10</sup> 5s<sup>2</sup> 5p<sup>6</sup>"
+                            >
+                                <div id="element_no_54" class="element_no">54</div>
+                                <div id="element_name_54" class="element_name">
+                                                                            Xe                                                                    </div>
+                            </div>
+                                    </div>
+                                <div class="element_row">
+                                                                    <div id="element_55"
+                                 class="element e_1"
+                                 title="Césio"
+                                 data-name="Césio"
+                                 data-symbol="Cs"
+                                 data-atomicnumber="55"
+                                 data-atomicmass="132.905"
+                                 data-ec="[Xe] 6s<sup>1</sup>"
+                            >
+                                <div id="element_no_55" class="element_no">55</div>
+                                <div id="element_name_55" class="element_name">
+                                                                            Cs                                                                    </div>
+                            </div>
+                                                <div id="element_56"
+                                 class="element e_2"
+                                 title="Bário"
+                                 data-name="Bário"
+                                 data-symbol="Ba"
+                                 data-atomicnumber="56"
+                                 data-atomicmass="137.327"
+                                 data-ec="[Xe] 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_56" class="element_no">56</div>
+                                <div id="element_name_56" class="element_name">
+                                                                            Ba                                                                    </div>
+                            </div>
+                                                <div id="element_57-71"
+                                 class="element e_lantanideos-arrows"
+                                 title=""
+                                 data-name=""
+                                 data-symbol=""
+                                 data-atomicnumber="57-71"
+                                 data-atomicmass=""
+                                 data-ec=""
+                            >
+                                <div id="element_no_57-71" class="element_no">57-71</div>
+                                <div id="element_name_57-71" class="element_name">
+                                                                                                                                                </div>
+                            </div>
+                                                <div id="element_72"
+                                 class="element e_3"
+                                 title="Háfnio"
+                                 data-name="Háfnio"
+                                 data-symbol="Hf"
+                                 data-atomicnumber="72"
+                                 data-atomicmass="178.49"
+                                 data-ec="[Xe] 4f<sup>14</sup> 5d² 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_72" class="element_no">72</div>
+                                <div id="element_name_72" class="element_name">
+                                                                            Hf                                                                    </div>
+                            </div>
+                                                <div id="element_73"
+                                 class="element e_3"
+                                 title="Tântalo"
+                                 data-name="Tântalo"
+                                 data-symbol="Ta"
+                                 data-atomicnumber="73"
+                                 data-atomicmass="180.948"
+                                 data-ec="[Xe] 4f<sup>14</sup> 5d<sup>3</sup> 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_73" class="element_no">73</div>
+                                <div id="element_name_73" class="element_name">
+                                                                            Ta                                                                    </div>
+                            </div>
+                                                <div id="element_74"
+                                 class="element e_3"
+                                 title="Tungstênio"
+                                 data-name="Tungstênio"
+                                 data-symbol="W"
+                                 data-atomicnumber="74"
+                                 data-atomicmass="183.84"
+                                 data-ec="[Xe] 4f<sup>14</sup> 5d<sup>4</sup> 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_74" class="element_no">74</div>
+                                <div id="element_name_74" class="element_name">
+                                                                            W                                                                    </div>
+                            </div>
+                                                <div id="element_75"
+                                 class="element e_3"
+                                 title="Rênio"
+                                 data-name="Rênio"
+                                 data-symbol="Re"
+                                 data-atomicnumber="75"
+                                 data-atomicmass="186.207"
+                                 data-ec="[Xe] 4f<sup>14</sup> 5d<sup>5</sup> 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_75" class="element_no">75</div>
+                                <div id="element_name_75" class="element_name">
+                                                                            Re                                                                    </div>
+                            </div>
+                                                <div id="element_76"
+                                 class="element e_3"
+                                 title="Ósmio"
+                                 data-name="Ósmio"
+                                 data-symbol="Os"
+                                 data-atomicnumber="76"
+                                 data-atomicmass="190.23"
+                                 data-ec="[Xe] 4f<sup>14</sup> 5d<sup>6</sup> 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_76" class="element_no">76</div>
+                                <div id="element_name_76" class="element_name">
+                                                                            Os                                                                    </div>
+                            </div>
+                                                <div id="element_77"
+                                 class="element e_3"
+                                 title="Irídio"
+                                 data-name="Irídio"
+                                 data-symbol="Ir"
+                                 data-atomicnumber="77"
+                                 data-atomicmass="192.217"
+                                 data-ec="[Xe] 4f<sup>14</sup> 5d<sup>7</sup> 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_77" class="element_no">77</div>
+                                <div id="element_name_77" class="element_name">
+                                                                            Ir                                                                    </div>
+                            </div>
+                                                <div id="element_78"
+                                 class="element e_3"
+                                 title="Platina"
+                                 data-name="Platina"
+                                 data-symbol="Pt"
+                                 data-atomicnumber="78"
+                                 data-atomicmass="195.084"
+                                 data-ec="[Xe] 4f<sup>14</sup> 5d<sup>8</sup> 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_78" class="element_no">78</div>
+                                <div id="element_name_78" class="element_name">
+                                                                            Pt                                                                    </div>
+                            </div>
+                                                <div id="element_79"
+                                 class="element e_3"
+                                 title="Ouro"
+                                 data-name="Ouro"
+                                 data-symbol="Au"
+                                 data-atomicnumber="79"
+                                 data-atomicmass="196.967"
+                                 data-ec="[Xe] 4f<sup>14</sup> 5d<sup>9</sup> 6s<sup>1</sup>"
+                            >
+                                <div id="element_no_79" class="element_no">79</div>
+                                <div id="element_name_79" class="element_name">
+                                                                            Au                                                                    </div>
+                            </div>
+                                                <div id="element_80"
+                                 class="element e_3"
+                                 title="Mercúrio"
+                                 data-name="Mercúrio"
+                                 data-symbol="Hg"
+                                 data-atomicnumber="80"
+                                 data-atomicmass="200.59"
+                                 data-ec="[Xe] 4f<sup>14</sup> 5d<sup>10</sup> 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_80" class="element_no">80</div>
+                                <div id="element_name_80" class="element_name">
+                                                                            Hg                                                                    </div>
+                            </div>
+                                                <div id="element_81"
+                                 class="element e_4"
+                                 title="Tálio"
+                                 data-name="Tálio"
+                                 data-symbol="Tl"
+                                 data-atomicnumber="81"
+                                 data-atomicmass="204.383"
+                                 data-ec="[Xe] 4f<sup>14</sup> 5d<sup>10</sup> 6s<sup>2</sup> 6p¹"
+                            >
+                                <div id="element_no_81" class="element_no">81</div>
+                                <div id="element_name_81" class="element_name">
+                                                                            Tl                                                                    </div>
+                            </div>
+                                                <div id="element_82"
+                                 class="element e_4"
+                                 title="Chumbo"
+                                 data-name="Chumbo"
+                                 data-symbol="Pb"
+                                 data-atomicnumber="82"
+                                 data-atomicmass="207.2"
+                                 data-ec="[Xe] 4f<sup>14</sup> 5d<sup>10</sup> 6s<sup>2</sup> 6p²"
+                            >
+                                <div id="element_no_82" class="element_no">82</div>
+                                <div id="element_name_82" class="element_name">
+                                                                            Pb                                                                    </div>
+                            </div>
+                                                <div id="element_83"
+                                 class="element e_4"
+                                 title="Bismuto"
+                                 data-name="Bismuto"
+                                 data-symbol="Bi"
+                                 data-atomicnumber="83"
+                                 data-atomicmass="208.98"
+                                 data-ec="[Xe] 4f<sup>14</sup> 5d<sup>10</sup> 6s<sup>2</sup> 6p<sup>3</sup>"
+                            >
+                                <div id="element_no_83" class="element_no">83</div>
+                                <div id="element_name_83" class="element_name">
+                                                                            Bi                                                                    </div>
+                            </div>
+                                                <div id="element_84"
+                                 class="element e_10"
+                                 title="Polônio"
+                                 data-name="Polônio"
+                                 data-symbol="Po"
+                                 data-atomicnumber="84"
+                                 data-atomicmass="[210]"
+                                 data-ec="[Xe] 4f<sup>14</sup> 5d<sup>10</sup> 6s<sup>2</sup> 6p<sup>4</sup>"
+                            >
+                                <div id="element_no_84" class="element_no">84</div>
+                                <div id="element_name_84" class="element_name">
+                                                                            Po                                                                    </div>
+                            </div>
+                                                <div id="element_85"
+                                 class="element e_8"
+                                 title="Ástato"
+                                 data-name="Ástato"
+                                 data-symbol="At"
+                                 data-atomicnumber="85"
+                                 data-atomicmass="[210]"
+                                 data-ec="[Xe] 4f<sup>14</sup> 5d<sup>10</sup> 6s<sup>2</sup> 6p<sup>5</sup>"
+                            >
+                                <div id="element_no_85" class="element_no">85</div>
+                                <div id="element_name_85" class="element_name">
+                                                                            At                                                                    </div>
+                            </div>
+                                                <div id="element_86"
+                                 class="element e_9"
+                                 title="Radônio"
+                                 data-name="Radônio"
+                                 data-symbol="Rn"
+                                 data-atomicnumber="86"
+                                 data-atomicmass="[220]"
+                                 data-ec="[Xe] 4f<sup>14</sup> 5d<sup>10</sup> 6s<sup>2</sup> 6p<sup>6</sup>"
+                            >
+                                <div id="element_no_86" class="element_no">86</div>
+                                <div id="element_name_86" class="element_name">
+                                                                            Rn                                                                    </div>
+                            </div>
+                                    </div>
+                                <div class="element_row">
+                                                                    <div id="element_87"
+                                 class="element e_1"
+                                 title="Frâncio"
+                                 data-name="Frâncio"
+                                 data-symbol="Fr"
+                                 data-atomicnumber="87"
+                                 data-atomicmass="[223]"
+                                 data-ec="[Rn] 7s<sup>1</sup>"
+                            >
+                                <div id="element_no_87" class="element_no">87</div>
+                                <div id="element_name_87" class="element_name">
+                                                                            Fr                                                                    </div>
+                            </div>
+                                                <div id="element_88"
+                                 class="element e_2"
+                                 title="Rádio"
+                                 data-name="Rádio"
+                                 data-symbol="Ra"
+                                 data-atomicnumber="88"
+                                 data-atomicmass="[226]"
+                                 data-ec="[Rn] 7s<sup>2</sup>"
+                            >
+                                <div id="element_no_88" class="element_no">88</div>
+                                <div id="element_name_88" class="element_name">
+                                                                            Ra                                                                    </div>
+                            </div>
+                                                <div id="element_89-103"
+                                 class="element e_actinidios-arrows"
+                                 title=""
+                                 data-name=""
+                                 data-symbol=""
+                                 data-atomicnumber="89-103"
+                                 data-atomicmass=""
+                                 data-ec=""
+                            >
+                                <div id="element_no_89-103" class="element_no">89-103</div>
+                                <div id="element_name_89-103" class="element_name">
+                                                                                                                                                </div>
+                            </div>
+                                                <div id="element_104"
+                                 class="element e_3"
+                                 title="Rutherfórdio"
+                                 data-name="Rutherfórdio"
+                                 data-symbol="Rf"
+                                 data-atomicnumber="104"
+                                 data-atomicmass="261"
+                                 data-ec=""
+                            >
+                                <div id="element_no_104" class="element_no">104</div>
+                                <div id="element_name_104" class="element_name">
+                                                                            Rf                                                                    </div>
+                            </div>
+                                                <div id="element_105"
+                                 class="element e_3"
+                                 title="Dúbnio"
+                                 data-name="Dúbnio"
+                                 data-symbol="Db"
+                                 data-atomicnumber="105"
+                                 data-atomicmass="[262]"
+                                 data-ec=""
+                            >
+                                <div id="element_no_105" class="element_no">105</div>
+                                <div id="element_name_105" class="element_name">
+                                                                            Db                                                                    </div>
+                            </div>
+                                                <div id="element_106"
+                                 class="element e_3"
+                                 title="Seabórgio"
+                                 data-name="Seabórgio"
+                                 data-symbol="Sg"
+                                 data-atomicnumber="106"
+                                 data-atomicmass="[266]"
+                                 data-ec=""
+                            >
+                                <div id="element_no_106" class="element_no">106</div>
+                                <div id="element_name_106" class="element_name">
+                                                                            Sg                                                                    </div>
+                            </div>
+                                                <div id="element_107"
+                                 class="element e_3"
+                                 title="Bóhrio"
+                                 data-name="Bóhrio"
+                                 data-symbol="Bh"
+                                 data-atomicnumber="107"
+                                 data-atomicmass="[264]"
+                                 data-ec=""
+                            >
+                                <div id="element_no_107" class="element_no">107</div>
+                                <div id="element_name_107" class="element_name">
+                                                                            Bh                                                                    </div>
+                            </div>
+                                                <div id="element_108"
+                                 class="element e_3"
+                                 title="Hássio"
+                                 data-name="Hássio"
+                                 data-symbol="Hs"
+                                 data-atomicnumber="108"
+                                 data-atomicmass="[277]"
+                                 data-ec=""
+                            >
+                                <div id="element_no_108" class="element_no">108</div>
+                                <div id="element_name_108" class="element_name">
+                                                                            Hs                                                                    </div>
+                            </div>
+                                                <div id="element_109"
+                                 class="element e_3"
+                                 title="Meitnério"
+                                 data-name="Meitnério"
+                                 data-symbol="Mt"
+                                 data-atomicnumber="109"
+                                 data-atomicmass="[268]"
+                                 data-ec=""
+                            >
+                                <div id="element_no_109" class="element_no">109</div>
+                                <div id="element_name_109" class="element_name">
+                                                                            Mt                                                                    </div>
+                            </div>
+                                                <div id="element_110"
+                                 class="element e_3"
+                                 title="Darmstádio"
+                                 data-name="Darmstádio"
+                                 data-symbol="Ds"
+                                 data-atomicnumber="110"
+                                 data-atomicmass="[271]"
+                                 data-ec=""
+                            >
+                                <div id="element_no_110" class="element_no">110</div>
+                                <div id="element_name_110" class="element_name">
+                                                                            Ds                                                                    </div>
+                            </div>
+                                                <div id="element_111"
+                                 class="element e_3"
+                                 title="Roentgênio"
+                                 data-name="Roentgênio"
+                                 data-symbol="Rg"
+                                 data-atomicnumber="111"
+                                 data-atomicmass="[272]"
+                                 data-ec=""
+                            >
+                                <div id="element_no_111" class="element_no">111</div>
+                                <div id="element_name_111" class="element_name">
+                                                                            Rg                                                                    </div>
+                            </div>
+                                                <div id="element_112"
+                                 class="element e_3"
+                                 title="Copernício"
+                                 data-name="Copernício"
+                                 data-symbol="Cn"
+                                 data-atomicnumber="112"
+                                 data-atomicmass="[277]"
+                                 data-ec=""
+                            >
+                                <div id="element_no_112" class="element_no">112</div>
+                                <div id="element_name_112" class="element_name">
+                                                                            Cn                                                                    </div>
+                            </div>
+                                                <div id="element_113"
+                                 class="element e_4"
+                                 title="Nihônio"
+                                 data-name="Nihônio"
+                                 data-symbol="Nh"
+                                 data-atomicnumber="113"
+                                 data-atomicmass="[286]"
+                                 data-ec=""
+                            >
+                                <div id="element_no_113" class="element_no">113</div>
+                                <div id="element_name_113" class="element_name">
+                                                                            Nh                                                                    </div>
+                            </div>
+                                                <div id="element_114"
+                                 class="element e_4"
+                                 title="Fleróvio"
+                                 data-name="Fleróvio"
+                                 data-symbol="Fl"
+                                 data-atomicnumber="114"
+                                 data-atomicmass="[289]"
+                                 data-ec=""
+                            >
+                                <div id="element_no_114" class="element_no">114</div>
+                                <div id="element_name_114" class="element_name">
+                                                                            Fl                                                                    </div>
+                            </div>
+                                                <div id="element_115"
+                                 class="element e_4"
+                                 title="Moscóvio"
+                                 data-name="Moscóvio"
+                                 data-symbol="Mc"
+                                 data-atomicnumber="115"
+                                 data-atomicmass="[288]"
+                                 data-ec=""
+                            >
+                                <div id="element_no_115" class="element_no">115</div>
+                                <div id="element_name_115" class="element_name">
+                                                                            Mc                                                                    </div>
+                            </div>
+                                                <div id="element_116"
+                                 class="element e_4"
+                                 title="Livermório"
+                                 data-name="Livermório"
+                                 data-symbol="Lv"
+                                 data-atomicnumber="116"
+                                 data-atomicmass="[293]"
+                                 data-ec=""
+                            >
+                                <div id="element_no_116" class="element_no">116</div>
+                                <div id="element_name_116" class="element_name">
+                                                                            Lv                                                                    </div>
+                            </div>
+                                                <div id="element_117"
+                                 class="element e_8"
+                                 title="Tenessino"
+                                 data-name="Tenessino"
+                                 data-symbol="Ts"
+                                 data-atomicnumber="117"
+                                 data-atomicmass="[294]"
+                                 data-ec=""
+                            >
+                                <div id="element_no_117" class="element_no">117</div>
+                                <div id="element_name_117" class="element_name">
+                                                                            Ts                                                                    </div>
+                            </div>
+                                                <div id="element_118"
+                                 class="element e_9"
+                                 title="Oganessônio"
+                                 data-name="Oganessônio"
+                                 data-symbol="Og"
+                                 data-atomicnumber="118"
+                                 data-atomicmass="[294]"
+                                 data-ec=""
+                            >
+                                <div id="element_no_118" class="element_no">118</div>
+                                <div id="element_name_118" class="element_name">
+                                                                            Og                                                                    </div>
+                            </div>
+                                    </div>
+                                        <div class="blank_row"></div>
+                                    <div class="element_row">
+                                            <div class="element_blank"></div>
+                        <div class="element_blank"></div>
+                                                                    <div class="element_blank"></div>
+                                                <div id="element_57"
+                                 class="element e_5"
+                                 title="Lantânio"
+                                 data-name="Lantânio"
+                                 data-symbol="La"
+                                 data-atomicnumber="57"
+                                 data-atomicmass="138.905"
+                                 data-ec="[Xe] 4f¹ 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_57" class="element_no">57</div>
+                                <div id="element_name_57" class="element_name">
+                                                                            La                                                                    </div>
+                            </div>
+                                                <div id="element_58"
+                                 class="element e_5"
+                                 title="Cério"
+                                 data-name="Cério"
+                                 data-symbol="Ce"
+                                 data-atomicnumber="58"
+                                 data-atomicmass="140.116"
+                                 data-ec="[Xe] 4f² 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_58" class="element_no">58</div>
+                                <div id="element_name_58" class="element_name">
+                                                                            Ce                                                                    </div>
+                            </div>
+                                                <div id="element_59"
+                                 class="element e_5"
+                                 title="Praseodímio"
+                                 data-name="Praseodímio"
+                                 data-symbol="Pr"
+                                 data-atomicnumber="59"
+                                 data-atomicmass="140.908"
+                                 data-ec="[Xe] 4f<sup>3</sup> 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_59" class="element_no">59</div>
+                                <div id="element_name_59" class="element_name">
+                                                                            Pr                                                                    </div>
+                            </div>
+                                                <div id="element_60"
+                                 class="element e_5"
+                                 title="Neodímio"
+                                 data-name="Neodímio"
+                                 data-symbol="Nd"
+                                 data-atomicnumber="60"
+                                 data-atomicmass="144.242"
+                                 data-ec="[Xe] 4f<sup>4</sup> 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_60" class="element_no">60</div>
+                                <div id="element_name_60" class="element_name">
+                                                                            Nd                                                                    </div>
+                            </div>
+                                                <div id="element_61"
+                                 class="element e_5"
+                                 title="Promécio"
+                                 data-name="Promécio"
+                                 data-symbol="Pm"
+                                 data-atomicnumber="61"
+                                 data-atomicmass="[145]"
+                                 data-ec="[Xe] 4f<sup>5</sup> 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_61" class="element_no">61</div>
+                                <div id="element_name_61" class="element_name">
+                                                                            Pm                                                                    </div>
+                            </div>
+                                                <div id="element_62"
+                                 class="element e_5"
+                                 title="Samário"
+                                 data-name="Samário"
+                                 data-symbol="Sm"
+                                 data-atomicnumber="62"
+                                 data-atomicmass="150.36"
+                                 data-ec="[Xe] 4f<sup>6</sup> 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_62" class="element_no">62</div>
+                                <div id="element_name_62" class="element_name">
+                                                                            Sm                                                                    </div>
+                            </div>
+                                                <div id="element_63"
+                                 class="element e_5"
+                                 title="Európio"
+                                 data-name="Európio"
+                                 data-symbol="Eu"
+                                 data-atomicnumber="63"
+                                 data-atomicmass="151.964"
+                                 data-ec="[Xe] 4f<sup>7</sup> 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_63" class="element_no">63</div>
+                                <div id="element_name_63" class="element_name">
+                                                                            Eu                                                                    </div>
+                            </div>
+                                                <div id="element_64"
+                                 class="element e_5"
+                                 title="Gadolínio"
+                                 data-name="Gadolínio"
+                                 data-symbol="Gd"
+                                 data-atomicnumber="64"
+                                 data-atomicmass="157.25"
+                                 data-ec="[Xe] 4f<sup>8</sup> 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_64" class="element_no">64</div>
+                                <div id="element_name_64" class="element_name">
+                                                                            Gd                                                                    </div>
+                            </div>
+                                                <div id="element_65"
+                                 class="element e_5"
+                                 title="Térbio"
+                                 data-name="Térbio"
+                                 data-symbol="Tb"
+                                 data-atomicnumber="65"
+                                 data-atomicmass="158.925"
+                                 data-ec="[Xe] 4f<sup>9</sup> 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_65" class="element_no">65</div>
+                                <div id="element_name_65" class="element_name">
+                                                                            Tb                                                                    </div>
+                            </div>
+                                                <div id="element_66"
+                                 class="element e_5"
+                                 title="Disprósio"
+                                 data-name="Disprósio"
+                                 data-symbol="Dy"
+                                 data-atomicnumber="66"
+                                 data-atomicmass="162.5"
+                                 data-ec="[Xe] 4f<sup>10</sup> 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_66" class="element_no">66</div>
+                                <div id="element_name_66" class="element_name">
+                                                                            Dy                                                                    </div>
+                            </div>
+                                                <div id="element_67"
+                                 class="element e_5"
+                                 title="Hólmio"
+                                 data-name="Hólmio"
+                                 data-symbol="Ho"
+                                 data-atomicnumber="67"
+                                 data-atomicmass="164.930 32"
+                                 data-ec="[Xe] 4f<sup>11</sup> 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_67" class="element_no">67</div>
+                                <div id="element_name_67" class="element_name">
+                                                                            Ho                                                                    </div>
+                            </div>
+                                                <div id="element_68"
+                                 class="element e_5"
+                                 title="Érbio"
+                                 data-name="Érbio"
+                                 data-symbol="Er"
+                                 data-atomicnumber="68"
+                                 data-atomicmass="167.259"
+                                 data-ec="[Xe] 4f<sup>12</sup> 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_68" class="element_no">68</div>
+                                <div id="element_name_68" class="element_name">
+                                                                            Er                                                                    </div>
+                            </div>
+                                                <div id="element_69"
+                                 class="element e_5"
+                                 title="Túlio"
+                                 data-name="Túlio"
+                                 data-symbol="Tm"
+                                 data-atomicnumber="69"
+                                 data-atomicmass="168.934"
+                                 data-ec="[Xe] 4f<sup>13</sup> 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_69" class="element_no">69</div>
+                                <div id="element_name_69" class="element_name">
+                                                                            Tm                                                                    </div>
+                            </div>
+                                                <div id="element_70"
+                                 class="element e_5"
+                                 title="Itérbio"
+                                 data-name="Itérbio"
+                                 data-symbol="Yb"
+                                 data-atomicnumber="70"
+                                 data-atomicmass="173.04"
+                                 data-ec="[Xe] 4f<sup>14</sup> 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_70" class="element_no">70</div>
+                                <div id="element_name_70" class="element_name">
+                                                                            Yb                                                                    </div>
+                            </div>
+                                                <div id="element_71"
+                                 class="element e_5"
+                                 title="Lutécio"
+                                 data-name="Lutécio"
+                                 data-symbol="Lu"
+                                 data-atomicnumber="71"
+                                 data-atomicmass="174.967"
+                                 data-ec="[Xe] 4f<sup>14</sup> 5d¹ 6s<sup>2</sup>"
+                            >
+                                <div id="element_no_71" class="element_no">71</div>
+                                <div id="element_name_71" class="element_name">
+                                                                            Lu                                                                    </div>
+                            </div>
+                                    </div>
+                                <div class="element_row">
+                                            <div class="element_blank"></div>
+                        <div class="element_blank"></div>
+                                                                    <div class="element_blank"></div>
+                                                <div id="element_89"
+                                 class="element e_6"
+                                 title="Actínio"
+                                 data-name="Actínio"
+                                 data-symbol="Ac"
+                                 data-atomicnumber="89"
+                                 data-atomicmass="[227]"
+                                 data-ec="[Rn] 5f¹ 7s<sup>2</sup>"
+                            >
+                                <div id="element_no_89" class="element_no">89</div>
+                                <div id="element_name_89" class="element_name">
+                                                                            Ac                                                                    </div>
+                            </div>
+                                                <div id="element_90"
+                                 class="element e_6"
+                                 title="Tório"
+                                 data-name="Tório"
+                                 data-symbol="Th"
+                                 data-atomicnumber="90"
+                                 data-atomicmass="232.03806"
+                                 data-ec="[Rn] 5f² 7s<sup>2</sup>"
+                            >
+                                <div id="element_no_90" class="element_no">90</div>
+                                <div id="element_name_90" class="element_name">
+                                                                            Th                                                                    </div>
+                            </div>
+                                                <div id="element_91"
+                                 class="element e_6"
+                                 title="Protactínio"
+                                 data-name="Protactínio"
+                                 data-symbol="Pa"
+                                 data-atomicnumber="91"
+                                 data-atomicmass="231.03588"
+                                 data-ec="[Rn] 5f<sup>3</sup> 7s<sup>2</sup>"
+                            >
+                                <div id="element_no_91" class="element_no">91</div>
+                                <div id="element_name_91" class="element_name">
+                                                                            Pa                                                                    </div>
+                            </div>
+                                                <div id="element_92"
+                                 class="element e_6"
+                                 title="Urânio"
+                                 data-name="Urânio"
+                                 data-symbol="U"
+                                 data-atomicnumber="92"
+                                 data-atomicmass="238.02891"
+                                 data-ec="[Rn] 5f<sup>4</sup> 7s<sup>2</sup>"
+                            >
+                                <div id="element_no_92" class="element_no">92</div>
+                                <div id="element_name_92" class="element_name">
+                                                                            U                                                                    </div>
+                            </div>
+                                                <div id="element_93"
+                                 class="element e_6"
+                                 title="Netúnio"
+                                 data-name="Netúnio"
+                                 data-symbol="Np"
+                                 data-atomicnumber="93"
+                                 data-atomicmass="[237]"
+                                 data-ec="[Rn] 5f<sup>5</sup> 7s<sup>2</sup>"
+                            >
+                                <div id="element_no_93" class="element_no">93</div>
+                                <div id="element_name_93" class="element_name">
+                                                                            Np                                                                    </div>
+                            </div>
+                                                <div id="element_94"
+                                 class="element e_6"
+                                 title="Plutônio"
+                                 data-name="Plutônio"
+                                 data-symbol="Pu"
+                                 data-atomicnumber="94"
+                                 data-atomicmass="[244]"
+                                 data-ec="[Rn] 5f<sup>6</sup> 7s<sup>2</sup>"
+                            >
+                                <div id="element_no_94" class="element_no">94</div>
+                                <div id="element_name_94" class="element_name">
+                                                                            Pu                                                                    </div>
+                            </div>
+                                                <div id="element_95"
+                                 class="element e_6"
+                                 title="Amerício"
+                                 data-name="Amerício"
+                                 data-symbol="Am"
+                                 data-atomicnumber="95"
+                                 data-atomicmass="[243]"
+                                 data-ec="[Rn] 5f<sup>7</sup> 7s<sup>2</sup>"
+                            >
+                                <div id="element_no_95" class="element_no">95</div>
+                                <div id="element_name_95" class="element_name">
+                                                                            Am                                                                    </div>
+                            </div>
+                                                <div id="element_96"
+                                 class="element e_6"
+                                 title="Cúrio"
+                                 data-name="Cúrio"
+                                 data-symbol="Cm"
+                                 data-atomicnumber="96"
+                                 data-atomicmass="[247]"
+                                 data-ec="[Rn] 5f<sup>8</sup> 7s<sup>2</sup>"
+                            >
+                                <div id="element_no_96" class="element_no">96</div>
+                                <div id="element_name_96" class="element_name">
+                                                                            Cm                                                                    </div>
+                            </div>
+                                                <div id="element_97"
+                                 class="element e_6"
+                                 title="Berquélio"
+                                 data-name="Berquélio"
+                                 data-symbol="Bk"
+                                 data-atomicnumber="97"
+                                 data-atomicmass="[247]"
+                                 data-ec="[Rn] 5f<sup>9</sup> 7s<sup>2</sup>"
+                            >
+                                <div id="element_no_97" class="element_no">97</div>
+                                <div id="element_name_97" class="element_name">
+                                                                            Bk                                                                    </div>
+                            </div>
+                                                <div id="element_98"
+                                 class="element e_6"
+                                 title="Califórnio"
+                                 data-name="Califórnio"
+                                 data-symbol="Cf"
+                                 data-atomicnumber="98"
+                                 data-atomicmass="[251]"
+                                 data-ec="[Rn] 5f<sup>10</sup> 7s<sup>2</sup>"
+                            >
+                                <div id="element_no_98" class="element_no">98</div>
+                                <div id="element_name_98" class="element_name">
+                                                                            Cf                                                                    </div>
+                            </div>
+                                                <div id="element_99"
+                                 class="element e_6"
+                                 title="Einsténio"
+                                 data-name="Einsténio"
+                                 data-symbol="Es"
+                                 data-atomicnumber="99"
+                                 data-atomicmass="[252]"
+                                 data-ec="[Rn] 5f<sup>11</sup> 7s<sup>2</sup>"
+                            >
+                                <div id="element_no_99" class="element_no">99</div>
+                                <div id="element_name_99" class="element_name">
+                                                                            Es                                                                    </div>
+                            </div>
+                                                <div id="element_100"
+                                 class="element e_6"
+                                 title="Férmio"
+                                 data-name="Férmio"
+                                 data-symbol="Fm"
+                                 data-atomicnumber="100"
+                                 data-atomicmass="[257]"
+                                 data-ec="[Rn] 5f<sup>12</sup> 7s<sup>2</sup>"
+                            >
+                                <div id="element_no_100" class="element_no">100</div>
+                                <div id="element_name_100" class="element_name">
+                                                                            Fm                                                                    </div>
+                            </div>
+                                                <div id="element_101"
+                                 class="element e_6"
+                                 title="Mendelévio"
+                                 data-name="Mendelévio"
+                                 data-symbol="Md"
+                                 data-atomicnumber="101"
+                                 data-atomicmass="[258]"
+                                 data-ec="[Rn] 5f<sup>13</sup> 7s<sup>2</sup>"
+                            >
+                                <div id="element_no_101" class="element_no">101</div>
+                                <div id="element_name_101" class="element_name">
+                                                                            Md                                                                    </div>
+                            </div>
+                                                <div id="element_102"
+                                 class="element e_6"
+                                 title="Nobélio"
+                                 data-name="Nobélio"
+                                 data-symbol="No"
+                                 data-atomicnumber="102"
+                                 data-atomicmass="[259]"
+                                 data-ec="[Rn] 5f<sup>14</sup> 7s<sup>2</sup>"
+                            >
+                                <div id="element_no_102" class="element_no">102</div>
+                                <div id="element_name_102" class="element_name">
+                                                                            No                                                                    </div>
+                            </div>
+                                                <div id="element_103"
+                                 class="element e_6"
+                                 title="Laurêncio"
+                                 data-name="Laurêncio"
+                                 data-symbol="Lr"
+                                 data-atomicnumber="103"
+                                 data-atomicmass="[262]"
+                                 data-ec=""
+                            >
+                                <div id="element_no_103" class="element_no">103</div>
+                                <div id="element_name_103" class="element_name">
+                                                                            Lr                                                                    </div>
+                            </div>
+                                    </div>
+                            </div>
+        </div>
+    </div>
+    <div class="elements_captions">
+        
+            
+                <div class="element_caption element_caption_7">Não metais</div>
+
+                    
+            
+                <div class="element_caption element_caption_9">Gases nobres</div>
+
+                    
+            
+                <div class="element_caption element_caption_1">Metais alcalinos</div>
+
+                    
+            
+                <div class="element_caption element_caption_2">Metais alcalino-terrosos</div>
+
+                    
+            
+                <div class="element_caption element_caption_10">Semimetais</div>
+
+                    
+            
+                <div class="element_caption element_caption_8">Halogênios</div>
+
+                    
+            
+                <div class="element_caption element_caption_4">Outros metais</div>
+
+                    
+            
+                <div class="element_caption element_caption_3">Metais de transição</div>
+
+                    
+                    
+                    
+            
+                <div class="element_caption element_caption_5">Lantanídeos</div>
+
+                    
+            
+                <div class="element_caption element_caption_6">Actinídios</div>
+
+                        </div>
+</div>            </div>
+                <div id="article" class="article col-xs-12 col-md-8 article-tabela-periodica">
+            <div id="wrapper" class="wrapper">
+                <div id="div-gpt-sg-83ca3fecd176f8f135cd2bcc6167f768" class="ad-unit ad-unit--pt-br gpt-article-top"><amp-ad width="300" height="250" type="doubleclick" data-slot="/1062898/TodaMateria_MREC_Detalhe_Topo" data-multi-size="250x250,200x200"></amp-ad></div><p>A <strong>Tabela Peri&oacute;dica</strong> &eacute; um modelo que agrupa todos os elementos qu&iacute;micos conhecidos e suas propriedades. Eles est&atilde;o organizados em ordem crescente de n&uacute;meros at&ocirc;micos (n&uacute;mero de pr&oacute;tons).</p><p>No total, a nova Tabela Peri&oacute;dica possui <strong>118 elementos qu&iacute;micos</strong> (92 naturais e 26 artificiais).</p><p>Cada quadrado especifica o nome do elemento qu&iacute;mico, seu s&iacute;mbolo e seu n&uacute;mero at&ocirc;mico.</p><p><a href="https://static.todamateria.com.br/upload/ta/be/tabelaperiodica0-cke.jpg" rel="nofollow"><img alt="Tabela Peri&oacute;dica" height="462" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="685" class="lazyload" data-src="https://static.todamateria.com.br/upload/ta/be/tabelaperiodica0-cke.jpg" data-sizes="auto"></a></p><h2>Organiza&ccedil;&atilde;o da Tabela Peri&oacute;dica</h2><p>Os chamados <strong>Per&iacute;odos</strong> s&atilde;o as linhas horizontais numeradas, que possuem elementos que apresentam o mesmo n&uacute;mero de camadas eletr&ocirc;nicas, totalizando sete per&iacute;odos.</p><ul><li>
+<strong>1&ordm; Per&iacute;odo</strong>: 2 elementos</li><li>
+<strong>2&ordm; Per&iacute;odo</strong>: 8 elementos</li><li>
+<strong>3&ordm; Per&iacute;odo</strong>: 8 elementos</li><li>
+<strong>4&ordm; Per&iacute;odo</strong>: 18 elementos</li><li>
+<strong>5&ordm; Per&iacute;odo</strong>: 18 elementos</li><li>
+<strong>6&ordm; Per&iacute;odo</strong>: 32 elementos</li><li>
+<strong>7&ordm; Per&iacute;odo</strong>: 32 elementos</li></ul><p>Com a organiza&ccedil;&atilde;o dos per&iacute;odos da tabela algumas linhas horizontais se tornariam muito extensas, por isso &eacute; comum representar a s&eacute;rie dos lantan&iacute;deos e a s&eacute;rie dos actin&iacute;dios &agrave; parte dos demais.</p><p>As <strong>Fam&iacute;lias</strong> ou <strong>Grupos</strong> s&atilde;o as colunas verticais, onde os elementos possuem o mesmo n&uacute;mero de el&eacute;trons na camada mais externa, ou seja, na <a href="/camada-de-valencia/">camada de val&ecirc;ncia</a>. Muitos elementos destes grupos est&atilde;o relacionados de acordo com suas <strong>propriedades qu&iacute;micas</strong>.</p><div id="todamateria_inarticle_mrec1" class="ad-unit ad-unit--pt-br"><amp-ad width="336" height="280" type="doubleclick" data-slot="/1062898/todamateria_inarticle_mrec1" data-multi-size="300x250,250x250,200x200"></amp-ad></div><p>S&atilde;o dezoito Grupos (A e B), sendo que as fam&iacute;lias mais conhecidas s&atilde;o do Grupo A, tamb&eacute;m chamados de <strong>elementos representativos</strong>:</p><ul><li>
+<strong>Fam&iacute;lia 1A</strong>: <a href="/metais-alcalinos/">Metais Alcalinos</a> (l&iacute;tio, s&oacute;dio, pot&aacute;ssio, rub&iacute;dio, c&eacute;sio e fr&acirc;ncio).</li><li>
+<strong>Fam&iacute;lia 2A</strong>: Metais Alcalino-Terrosos (ber&iacute;lio, magn&eacute;sio, c&aacute;lcio, estr&ocirc;ncio, b&aacute;rio e r&aacute;dio).</li><li>
+<strong>Fam&iacute;lia 3A</strong>: Fam&iacute;lia do Boro (boro, alum&iacute;nio, g&aacute;lio, &iacute;ndio, t&aacute;lio e nih&ocirc;nio).</li><li>
+<strong>Fam&iacute;lia 4A</strong>: Fam&iacute;lia do Carbono (carbono, sil&iacute;cio, germ&acirc;nio, estanho, chumbo e fler&oacute;vio).</li><li>
+<strong>Fam&iacute;lia 5A</strong>: Fam&iacute;lia do Nitrog&ecirc;nio (nitrog&ecirc;nio, f&oacute;sforo, ars&ecirc;nio, antim&ocirc;nio, bismuto e mosc&oacute;vio).</li><li>
+<strong>Fam&iacute;lia 6A</strong>: Calcog&ecirc;nios (oxig&ecirc;nio, enxofre, sel&ecirc;nio, tel&uacute;rio, pol&ocirc;nio, liverm&oacute;rio).</li><li>
+<strong>Fam&iacute;lia 7A</strong>: <a href="/halogenios/">Halog&ecirc;nios</a> (fl&uacute;or, cloro, bromo, iodo, astato e tenessino).</li><li>
+<strong>Fam&iacute;lia 8A</strong>: <a href="/gases-nobres/">Gases Nobres</a> (h&eacute;lio, ne&ocirc;nio, arg&ocirc;nio, cript&ocirc;nio, xen&ocirc;nio, rad&ocirc;nio e oganess&ocirc;nio).</li></ul><p>Os <strong>elementos de transi&ccedil;&atilde;o</strong>, tamb&eacute;m chamados de metais de transi&ccedil;&atilde;o, representam as 8 fam&iacute;lias do Grupo B:</p><ul><li>
+<strong>Fam&iacute;lia 1B</strong>: cobre, prata, ouro e roentg&ecirc;nio.</li><li>
+<strong>Fam&iacute;lia 2B</strong>: zinco, c&aacute;dmio, merc&uacute;rio e copern&iacute;cio.</li><li>
+<strong>Fam&iacute;lia 3B</strong>: esc&acirc;ndio, &iacute;trio e s&eacute;rio de lantan&iacute;deos (15 elementos) e actin&iacute;deos (15 elementos).</li><li>
+<strong>Fam&iacute;lia 4B</strong>: tit&acirc;nio, zirc&ocirc;nio, h&aacute;fnio e rutherf&oacute;rdio.</li><li>
+<strong>Fam&iacute;lia 5B</strong>: van&aacute;dio, ni&oacute;bio, t&acirc;ntalo e d&uacute;bnio.</li><li>
+<strong>Fam&iacute;lia 6B</strong>: cromo, molibd&ecirc;nio, tungst&ecirc;nio e seab&oacute;rgio.</li><li>
+<strong>Fam&iacute;lia 7B</strong>: mangan&ecirc;s, tecn&eacute;cio, r&ecirc;nio e b&oacute;hrio.</li><li>
+<strong>Fam&iacute;lia 8B</strong>: ferro, rut&ecirc;nio, &oacute;smio, h&aacute;ssio, cobalto, r&oacute;dio, ir&iacute;dio, meitn&eacute;rio, n&iacute;quel, pal&aacute;dio, platina, darmst&aacute;dio.</li></ul><p>Por determina&ccedil;&atilde;o da Uni&atilde;o Internacional de Qu&iacute;mica Pura e Aplicada (IUPAC), os grupos passaram a ser organizados por n&uacute;meros de 1 a 18, embora ainda seja comum encontrarmos as fam&iacute;lias sendo descritas por letras e n&uacute;meros como mostrado anteriormente.</p><p>Uma importante diferen&ccedil;a que o novo sistema apresentado pela IUPAC gerou &eacute; que a fam&iacute;lia 8B corresponde aos grupos 8, 9 e 10 na tabela peri&oacute;dica.</p><aside class="see-also">
+            <div class="summary">
+                <span>Veja tamb&eacute;m:</span>
+                <a href="/familias-da-tabela-periodica/">Fam&iacute;lias da tabela peri&oacute;dica</a>
+            </div>
+        </aside><h2>Tabela Peri&oacute;dica preto e branco</h2><p><img alt="Tabela Peri&oacute;dica preto e branco" height="443" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="686" class="lazyload" data-src="https://static.todamateria.com.br/upload/ta/be/tabelaperiodicapretoebranco-0-cke.jpg" data-sizes="auto"></p><h2>Hist&oacute;ria da Tabela Peri&oacute;dica</h2><p>A finalidade fundamental de se criar uma tabela era facilitar a classifica&ccedil;&atilde;o, a organiza&ccedil;&atilde;o e o agrupamento dos elementos conforme suas propriedades.</p><div id="div-gpt-sg-96c63ecfe9c5cfec44384c5073cc79cd" class="ad-unit ad-unit--pt-br"><amp-ad width="336" height="280" type="doubleclick" data-slot="/1062898/todamateria_inarticle_mrec2" data-multi-size="300x250,250x250,200x200"></amp-ad></div><p>At&eacute; se chegar ao modelo atual, muitos cientistas criaram tabelas que pudessem demonstrar uma forma de organizar os elementos qu&iacute;micos.</p><p>A Tabela Peri&oacute;dica mais completa foi elaborada pelo qu&iacute;mico russo <strong>Dmitri Mendeleiev</strong> (1834-1907), no ano de 1869 em fun&ccedil;&atilde;o da <a href="/massa-atomica/">massa at&ocirc;mica</a> dos elementos.</p><p>Mendeleiev organizou grupos de elementos de acordo com as propriedades semelhantes e deixou espa&ccedil;os vazios para os elementos que ele acreditava que ainda seriam descobertos.</p><p>A Tabela Peri&oacute;dica como a conhecemos atualmente foi organizada por <strong>Henry Moseley</strong>, em 1913, por ordem de <a href="/numero-atomico/">n&uacute;mero at&ocirc;mico</a> dos elementos qu&iacute;micos, reorganizando a tabela proposta por Mendeleiev.</p><p><strong>William Ramsay</strong> descobriu os elementos ne&ocirc;nio, arg&ocirc;nio, cript&ocirc;nio e xen&ocirc;nio. Esses elementos juntamente com h&eacute;lio e rad&ocirc;nio inclu&iacute;ram a fam&iacute;lia dos gases nobres na Tabela Peri&oacute;dica.</p><p><strong>Glenn Seaborg</strong> descobriu os elementos transur&acirc;nicos (do n&uacute;mero 94 ao 102) e em 1944 prop&ocirc;s a reconfigura&ccedil;&atilde;o da Tabela Peri&oacute;dica, colocando a s&eacute;rie dos actin&iacute;dios abaixo da s&eacute;rie dos lantan&iacute;dios.</p><p>Em 2019, a tabela peri&oacute;dica completa 150 anos e foi criada uma resolu&ccedil;&atilde;o das Na&ccedil;&otilde;es Unidas e da UNESCO para que esse seja o Ano Internacional da Tabela Peri&oacute;dica dos Elementos Qu&iacute;micos como forma de reconhecimento de uma das cria&ccedil;&otilde;es mais influentes e importantes da ci&ecirc;ncia.</p><div id="div-gpt-sg-13ff9163a6c972bf473ada3e2fb562d4" class="ad-unit ad-unit--pt-br"><amp-ad width="336" height="280" type="doubleclick" data-slot="/1062898/todamateria_inarticle_mrec3" data-multi-size="300x250,250x250,200x200"></amp-ad></div><aside class="see-also">
+            <div class="summary">
+                <span>Veja tamb&eacute;m:</span>
+                <a href="/historia-da-tabela-periodica/">Hist&oacute;ria da Tabela Peri&oacute;dica</a>
+            </div>
+        </aside><h2>Curiosidades da Tabela Peri&oacute;dica</h2><ul><li>A Uni&atilde;o Internacional de Qu&iacute;mica Pura e Aplicada (em ingl&ecirc;s: <em>International Union of Pure and Applied Chemistry</em> - IUPAC) &eacute; uma ONG (Organiza&ccedil;&atilde;o n&atilde;o governamental) dedicada aos estudos e avan&ccedil;os da <a href="/o-que-e-quimica/">Qu&iacute;mica</a>. Mundialmente, o padr&atilde;o estabelecido para a Tabela Peri&oacute;dica &eacute; recomendado pela Organiza&ccedil;&atilde;o.</li><li>H&aacute; 350 anos atr&aacute;s, o primeiro elemento qu&iacute;mico isolado em laborat&oacute;rio foi o <a href="/fosforo/">f&oacute;sforo</a> pelo alquimista alem&atilde;o Henning Brand.</li><li>O Elemento Plut&ocirc;nio foi descoberto na d&eacute;cada de 40, pelo qu&iacute;mico estadunidense Glenn Seaborg. Ele descobriu todos os elementos transur&acirc;nicos e ganhou o Pr&ecirc;mio Nobel em 1951. O elemento 106 recebeu o nome Seab&oacute;rgio em sua homenagem.</li><li>Em 2016, novos elementos qu&iacute;micos da tabela foram oficializados: Tennessine (Ununs&eacute;ptio), Nihonium (Ununtrio), Moscovium (Ununp&ecirc;ntio) e Oganesson (Unun&oacute;ctio).</li><li>Os novos elementos qu&iacute;micos sintetizados s&atilde;o chamados de superpesados por conterem em seus n&uacute;cleos um n&uacute;mero elevado de <a href="/proton/">pr&oacute;tons</a>, que vem a ser muito superior aos elementos qu&iacute;micos encontrados na natureza.</li></ul><aside class="see-also">
+            <div class="summary">
+                <span>Veja tamb&eacute;m:</span>
+                <a href="/elementos-quimicos/">Elementos Qu&iacute;micos</a>
+            </div>
+        </aside><h2>Resumo da Tabela Peri&oacute;dica</h2><p><img alt="resumo tabela periodica" height="389" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="630" class="lazyload" data-src="https://static.todamateria.com.br/upload/re/su/resumodatabelaperiodicaboring-0-cke.jpg" data-sizes="auto">
+        <aside class="see-also">
+            <div class="summary">
+                <span>Veja tamb&eacute;m:</span>
+                <a href="/propriedades-periodicas/">Propriedades Peri&oacute;dicas</a>
+            </div>
+        </aside></p><p>Confira quest&otilde;es de vestibulares com resolu&ccedil;&atilde;o comentada em <a href="/exercicios-tabela-periodica/">Exerc&iacute;cios sobre a Tabela Peri&oacute;dica</a> e quest&otilde;es in&eacute;ditas em <a href="/exercicios-sobre-organizacao-da-tabela-periodica/">Exerc&iacute;cios sobre Organiza&ccedil;&atilde;o da Tabela Peri&oacute;dica</a>.</p>
+                <div class="row mt50">
+                    <div class="col-xs-12">
+                                                <div id="sg-feedback" class="sg-feedback">
+                        </div>
+                        <script>
+                            window.UBA_API_URL = "https://api.7gra.us/user-behaviour/v1/";
+                            window.PROJECT_ID = 48;
+                            window.DOMAIN = "todamateria.com.br";
+                            window.CONTENT_URL = "tabela-periodica";
+                        </script>
+                        <script async src="https://cdn.7gra.us/wc/user-behaviour/v1.1.js"></script>
+                        <user-hits data-element-value="105"></user-hits>
+
+                        <script async src="https://cdn.7gra.us/feedback-css/v2.js"></script>
+                        <script async src="https://cdn.7gra.us/feedback/v2.js"></script>
+                        <script>
+                            window.onload = function() {
+                                new Feedback({
+                                    environment: "production",
+                                    project_id: "48",
+                                    project_name: "todamateria.com.br",
+                                    author_id:  "187",
+                                    author_name: "Carolina Batista",
+                                    content_type: "article",
+                                    content_id:  "105",
+                                    content_url: "tabela-periodica",
+                                    content_title: "Tabela Periódica"
+                                });
+                            }
+                        </script>
+
+                            <div class="box-social">
+        <div class="sg-social-hidden sg-social"  data-url="https://www.todamateria.com.br/tabela-periodica/" data-text-selector-id="article"><div class="sg-facebook-share"><button class="sg-facebook-btn" title="Compartilhar | Facebook">
+                        <span class="icon-sg-social icon-sg-social-facebook"></span>
+                        <span class='text-sg-social'>Compartilhar</span>
+                    </button></div><div class="sg-whatsapp-share"><button class="sg-whatsapp-btn" title="Enviar | WhatsApp">
+                        <span class="icon-sg-social icon-sg-social-whatsapp"></span>
+                        <span class='text-sg-social'>Enviar</span>
+                    </button></div><div class="sg-email-share"><button class="sg-email-btn" title="Email">
+                        <span class="icon-sg-social icon-sg-social-email"></span>
+                        <span class='text-sg-social'>Email</span>
+                    </button></div></div>    </div>                     </div>
+                </div>
+                
+
+                    <div class="author-article author-article--b">
+                                                    <div class="author-article--b__photo author-article--b__photo--circle">
+                                <img
+                                    src="https://static.todamateria.com.br/img/autor/ca/ro/carolina-batista-da-silva_36.jpg"
+                                    srcset="https://static.todamateria.com.br/img/autor/ca/ro/carolina-batista-da-silva_36.jpg, https://static.todamateria.com.br/img/autor/ca/ro/carolina-batista-da-silva_72.jpg 2x"
+                                    width="36"
+                                    height="36"
+                                    alt="Carolina Batista"
+                                    title="Carolina Batista"
+                                    />
+                            </div>
+                                                <div class="author-article--b__info">
+                            <div class="author-article--b__info__name">
+                                <a href="/autor/carolina-batista-da-silva/" class="author-name" title="Carolina Batista">Carolina Batista</a>
+                            </div>
+                        </div>
+
+                                                    <div class="author-article--b__bio">Técnica em Química pelo Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco (2011) e Bacharelada em Química Tecnológica e Industrial pela Universidade Federal de Alagoas (2018).</div>
+                        
+                    </div>
+                                                    <div id="related-bottom">
+
+                                            <h2 class="related-h2">Veja também</h2>
+                    
+                        <ul class="related-list">
+                                                                <li><a href="/exercicios-tabela-periodica/"
+                                        title="Exercícios sobre a Tabela Periódica">Exercícios sobre a Tabela Periódica</a></li>
+                                                                    <li><a href="/familias-da-tabela-periodica/"
+                                        title="Famílias da tabela periódica">Famílias da tabela periódica</a></li>
+                                                                    <li><a href="/camada-de-valencia/"
+                                        title="Camada de Valência">Camada de Valência</a></li>
+                                                                    <li><a href="/ligacoes-quimicas/"
+                                        title="Ligações Químicas">Ligações Químicas</a></li>
+                                                                    <li><a href="/metais-alcalinos/"
+                                        title="Metais Alcalinos">Metais Alcalinos</a></li>
+                                                                    <li><a href="/propriedades-periodicas/"
+                                        title="Propriedades Periódicas">Propriedades Periódicas</a></li>
+                                                                    <li><a href="/diagrama-de-pauling/"
+                                        title="Diagrama de Pauling">Diagrama de Pauling</a></li>
+                                                                    <li><a href="/halogenios/"
+                                        title="Halogênios">Halogênios</a></li>
+                                                        </ul>
+                    </div>
+                            </div>
+
+        </div>
+
+                    <div id="sidebar" class="sidebar col-xs-12 col-md-4">
+                <div class="wrapper">
+                                                <h2 class="section">Leitura Recomendada</h2>
+        <ul class="most-read">
+                            <li><a href="/ligacoes-quimicas/" title="Ligações Químicas">Ligações Químicas</a></li>
+                            <li><a href="/estados-fisicos-da-agua/" title="Estados Físicos da Água">Estados Físicos da Água</a></li>
+                            <li><a href="/modelos-atomicos/" title="Modelos Atômicos">Modelos Atômicos</a></li>
+                            <li><a href="/separacao-de-misturas/" title="Separação de Misturas">Separação de Misturas</a></li>
+                            <li><a href="/reacoes-quimicas/" title="Reações Químicas">Reações Químicas</a></li>
+                            <li><a href="/isotopos-isobaros-e-isotonos/" title="Isótopos, isóbaros e isótonos">Isótopos, isóbaros e isótonos</a></li>
+                    </ul>
+                            <div class="article-topics w100">
+        <h2 class="section w100">Tópicos Relacionados</h2>
+                    <a href="/quimica/" title="Química">Química</a>
+                    <a href="/quimica/quimica-geral/" title="Química Geral">Química Geral</a>
+            </div>
+                </div>
+
+                                    <div class="sidebar-sticky">
+                        <div id="div-gpt-ad-1562148323646-0" class="ad-unit ad-unit--pt-br sidebar-sticky--ad"></div>                        <div class="yt-channel-wrap">
+                            <div class="yt-channel yt-channel--detail">
+                                
+
+    <a class="yt-banner" href="https://www.youtube.com/c/todamateriabrasil/" title="Toda Matéria no Youtube" onclick="ga('send', 'event', 'Youtube', 'Click', 'Link');">
+                    <img title="Toda Matéria no Youtube" width="310" height="170" src="/img/channel-yt/yt-bg-detail.png" srcset="/img/channel-yt/yt-bg-detail.png 1x, /img/channel-yt/yt-bg-detail@2x.png 2x" alt="Toda Matéria no YouTube">
+            </a>
+    <div class="yt-subscribe-wrap">
+        <a class="yt-subscribe--img" href="https://www.youtube.com/c/todamateriabrasil/" title="Toda Matéria no Youtube" onclick="ga('send', 'event', 'Youtube', 'Click', 'Link');">
+                            <img title="Toda Matéria no Youtube" width="45" height="45" src="/img/channel-yt/yt-thumb.png" srcset="/img/channel-yt/yt-thumb.png 1x, /img/channel-yt/yt-thumb@2x.png 2x" alt="Thumbnail Toda Matéria no Youtube">
+            
+        </a>
+        <div class="yt-subscribe">
+            <a class="yt-subscribe--title" href="https://www.youtube.com/c/todamateriabrasil/" title="Toda Matéria no Youtube"  onclick="ga('send', 'event', 'Youtube', 'Click', 'Link');">Toda Matéria</a>
+            <a class="yt-subscribe--button" href="https://www.youtube.com/c/todamateriabrasil/?sub_confirmation=1" title="Toda Matéria no Youtube" onclick="ga('send', 'event', 'Youtube', 'Click', 'Subscribe');"><i></i>Inscreva-se</a>
+        </div>
+    </div>                            </div>
+                        </div>
+                    </div>
+
+                
+                
+            </div>
+            </div>
+
+    
+        <div class="row" id="taboola-wrapper">
+        <div class="col-xs-12 col-md-8">
+            <div id="taboola-below-article-thumbnails"></div>
+        </div>
+    </div>
+    
+
+    <script>
+
+        window.addEventListener('load', function(){
+            Sg_Utils.request('/hit.php', 'POST', {
+                type: 'post',
+                id: '105',
+                rel: '634,2967,635,2156,2871,2968,553,2878'
+            });
+        });
+
+        document.addEventListener('readystatechange', function(){
+            if (document.readyState === 'complete') {
+                window._taboola = window._taboola || [];
+                _taboola.push({ article: 'auto' });
+                _taboola.push({
+                    mode:        'thumbnails-a',
+                    container:   'taboola-below-article-thumbnails',
+                    placement:   'Below Article Thumbnails',
+                    target_type: 'mix'
+                });
+                Sg_Utils.getScript('//cdn.taboola.com/libtrc/7grausnew-todamateria/loader.js');
+            }
+        });
+
+        var bhof_options = {"ct":"MtM11hl0WkGS8C6iYcKM\/pzZueBpv4Q3mn9u+1NEUnF6D+E3JKR\/6BfS4FrSejoIwUamMgasaw5pgHJzzlvBrBO3ew3o6W7V3deTNnf2DQk=","iv":"6474bb32b1e3750129eea1cd0aaa065c","s":"e8f2d0250ce0a994"};    </script>
+
+<script src="//imasdk.googleapis.com/js/sdkloader/ima3.js" async></script>
+<script src="https://7gra.us/adspc.js?v=4" async></script>
+<script>
+    var config ={
+        id_wrapper: "todamateria_inarticle_mrec1",
+        tag_url:    "https://pubads.g.doubleclick.net/gampad/ads?sz=400x300|640x480|300x250&iu=/1062898/TodaMateria_InTextVideo&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]"
+    };
+    var preload = function () {
+        inView('#'+config.id_wrapper)
+            .once('enter', function () {
+                console.log('starting 5s');
+                preloader.init(config);
+            });
+    };
+
+    window.addEventListener('load', preload);
+</script>
+
+<script>
+    !function(e){var t={};function n(o){if(t[o])return t[o].exports;var r=t[o]={i:o,l:!1,exports:{}};return e[o].call(r.exports,r,r.exports,n),r.l=!0,r.exports}n.m=e,n.c=t,n.d=function(e,t,o){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:o})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(n.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var r in e)n.d(o,r,function(t){return e[t]}.bind(null,r));return o},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="https://static.todamateria.com.br/layout/assets/dist/",n(n.s=9)}({10:function(e,t){window[window.attachEvent?"attachEvent":"addEventListener"](window.attachEvent?"onload":"DOMContentLoaded",(function(){window.lazySizesConfig=window.lazySizesConfig||{},window.lazySizesConfig.expand=1e3,window.lazySizesConfig.expFactor=2}),!1)},9:function(e,t,n){e.exports=n(10)}});</script>
+
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="pub pub-footer">
+                            <div id="div-gpt-sg-8cad34ed0a4dcc1a5bab85033cf0595f" class="ad-unit ad-unit--pt-br"></div>                        </div>
+
+                        					</div>
+				</div>
+			</div>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-9">
+                            <input type="checkbox" id="footer-menu" class="footer-menu">
+                            <ul id="footer-list" class="footer-list">
+                                <li><a href="/biologia/">Biologia</a></li>
+                                <li><a href="/filosofia/">Filosofia</a></li>
+                                <li><a href="/fisica/">Física</a></li>
+                                <li><a href="/geografia/">Geografia</a></li>
+                                <li><a href="/historia/">História</a></li>
+                                <li><a href="/lingua-portuguesa/">Língua Portuguesa</a></li>
+                                <li><a href="/literatura/">Literatura</a></li>
+                                <li><a href="/matematica/">Matemática</a></li>
+                                <li><a href="/quimica/">Química</a></li>
+                                <li><a href="/ingles/">Inglês</a></li>
+                                <li><a href="/enem/">Enem</a></li>
+                                <li><a href="/materias/">Todas as Matérias</a></li>
+                                <li><a href="/populares/">Populares</a></li>
+                                <li><a href="/page/1/">Últimas Matérias</a></li>
+
+                                                                    <li class="footer-list--full"><a href="/como-citar/">Como Citar</a></li>
+                                                                    <li class="footer-list--full"><a href="/contato/">Contato</a></li>
+                                                                    <li class="footer-list--full"><a href="/politica-de-privacidade/">Política de Privacidade</a></li>
+                                                                    <li class="footer-list--full"><a href="/sobre/">Sobre</a></li>
+                                                                <li class="footer-list--full"><a href="/feed/">RSS&nbsp;Feed</a></li>
+                            </ul>
+                            <label class="footer-menu-trigger" for="footer-menu"><i></i></label>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <div class="footer-social">
+                                <span class="footer-social--yt">Siga-nos
+                                    <a href="https://www.youtube.com/c/todamateriabrasil/" title="Toda Matéria no Youtube" onclick="ga('send', 'event', 'Youtube', 'Click', 'LinkFooter');">
+                                        <img src="/img/channel-yt/yt-wide.png" srcset="/img/channel-yt/yt-wide.png 1x, /img/channel-yt/yt-wide@2x.png 2x" alt="Toda Matéria no Youtube" />
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 copyright" id="copyright">
+                            <strong>Toda Matéria</strong>: conteúdos escolares.
+                            <br>
+                            © 2011-2021 <a href="https://www.7graus.com/" rel="nofollow co-worker">7Graus</a>
+                        </div>
+                        <div class="col-sm-8 hidden-xs">
+                            <ul class="footer-other">
+                                                            <li><a href="/como-citar/">Como Citar</a></li>
+                                                            <li><a href="/contato/">Contato</a></li>
+                                                            <li><a href="/politica-de-privacidade/">Política de Privacidade</a></li>
+                                                            <li><a href="/sobre/">Sobre</a></li>
+                                                            <li><a href="/feed/">RSS&nbsp;Feed</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+
+			
+            <script>(function(){googletag.cmd.push(function(){googletag.pubads().enableLazyLoad({"fetchMarginPercent":500,"renderMarginPercent":200,"mobileScaling":2});googletag.pubads().disableInitialLoad();googletag.enableServices();var sm0=googletag.sizeMapping().addSize([0,0],[]).addSize([270,0],[[250,250],[200,200]]).addSize([330,0],[[300,250],[250,250],[200,200]]).build(),sm1=googletag.sizeMapping().addSize([0,0],[]).addSize([270,0],[[250,250],[200,200]]).addSize([330,0],[[300,250],[250,250],[200,200]]).addSize([340,0],[[300,250],[250,250],[200,200]]).addSize([356,0],[[336,280],[300,250],[250,250],[200,200]]).addSize([768,0],[[300,600],[240,400],[160,600],[300,250],[120,600],[250,250],[200,200],[300,100]]).build(),sm2=googletag.sizeMapping().addSize([0,0],[]).addSize([270,0],[[250,250],[200,200]]).addSize([330,0],[[300,250],[250,250],[200,200]]).addSize([340,0],[[300,250],[250,250],[200,200]]).addSize([356,0],[[336,280],[300,250],[250,250],[200,200]]).addSize([488,0],[[336,280],[300,250],[250,250],[200,200]]).build(),sm3=googletag.sizeMapping().addSize([0,0],[]).addSize([270,0],[[250,250],[200,200]]).addSize([330,0],[[300,250],[250,250],[200,200]]).addSize([340,0],[[300,250],[250,250],[200,200]]).addSize([356,0],[[336,280],[300,250],[250,250],[200,200]]).addSize([488,0],[[336,280],[300,250],[250,250],[200,200]]).addSize([748,0],[[728,90],[468,60]]).addSize([990,0],[[970,90],[728,90],[970,66],[468,60]]).build(),sm4=googletag.sizeMapping().addSize([0,0],[]).addSize([300,0],[[300,50]]).addSize([330,0],[[320,50],[300,50]]).addSize([768,0],[]).build();var ss0=[[300,250],[250,250],[200,200]],ss1=[[336,280],[300,600],[300,250],[300,100],[250,250],[240,400],[200,200],[160,600],[120,600]],ss2=[[336,280],[300,250],[250,250],[200,200]],ss3=[[970,90],[970,66],[728,90],[468,60],[336,280],[300,250],[250,250],[200,200]],ss4=[[320,50],[300,50]];var s0=googletag.defineSlot('/1062898/TodaMateria_MREC_Detalhe_Topo',ss0,'div-gpt-sg-83ca3fecd176f8f135cd2bcc6167f768').defineSizeMapping(sm0).addService(googletag.pubads()),s1=googletag.defineSlot('/1062898/TodaMateria_Sidebar_Sticky',ss1,'div-gpt-ad-1562148323646-0').defineSizeMapping(sm1).addService(googletag.pubads()),s2=googletag.defineSlot('/1062898/todamateria_inarticle_mrec1',ss2,'todamateria_inarticle_mrec1').defineSizeMapping(sm2).addService(googletag.pubads()),s3=googletag.defineSlot('/1062898/todamateria_inarticle_mrec2',ss2,'div-gpt-sg-96c63ecfe9c5cfec44384c5073cc79cd').defineSizeMapping(sm2).addService(googletag.pubads()),s4=googletag.defineSlot('/1062898/todamateria_inarticle_mrec3',ss2,'div-gpt-sg-13ff9163a6c972bf473ada3e2fb562d4').defineSizeMapping(sm2).addService(googletag.pubads()),s5=googletag.defineSlot('/1062898/todamateria_bottom_responsive_ros',ss3,'div-gpt-sg-8cad34ed0a4dcc1a5bab85033cf0595f').defineSizeMapping(sm3).addService(googletag.pubads()),s6=googletag.defineSlot('/1062898/todamateriaBR_sticky_320x50',ss4,'div-gpt-sg-e40840d205255b968bfdd8be19487cf8').defineSizeMapping(sm4).addService(googletag.pubads());var slots=[s0,s1,s2,s3,s4,s5,s6];var esbs=!0,hsbs=function(){this.parentNode.style.display="none";document.body.style.paddingBottom="";dsbs();localStorage.setItem("sg_gpt_sb",0)},ssbs=function(e){var a=document.getElementById("div-gpt-sg-e40840d205255b968bfdd8be19487cf8").parentNode;a.style.display="";document.body.style.paddingBottom="76px";var cb=document.createElement("div");cb.style.clear="both";document.body.appendChild(cb);a.children[0].addEventListener("click",hsbs)},dsbs=function(){googletag.destroySlots([s6]);for(i=slots.length-1;i>=0;--i)if(slots[i]===s6)slots.splice(i,1)};if(localStorage.getItem("sg_gpt_sb"))dsbs();else{googletag.pubads().addEventListener("slotOnload",function(e){if(e.slot===s6&&!esbs)ssbs()});googletag.pubads().addEventListener("slotRenderEnded",function(e){if(e.slot===s6)esbs=e.isEmpty})}slots.forEach(function(s){googletag.display(s.getSlotElementId())});googletag.pubads().refresh(slots);var mc={"div-gpt-ad-1562148323646-0":{"reloadTime":45,"adUnitPaths":["\/1062898\/TodaMateria_Sidebar_Sticky_r1","\/1062898\/TodaMateria_Sidebar_Sticky_r2","\/1062898\/TodaMateria_Sidebar_Sticky_r3","\/1062898\/TodaMateria_Sidebar_Sticky_r4","\/1062898\/TodaMateria_Sidebar_Sticky_last"],"sizeVar":ss1,"sizeMappingVar":sm1},"div-gpt-sg-e40840d205255b968bfdd8be19487cf8":{"reloadTime":45,"adUnitPaths":["\/1062898\/todamateriaBR_sticky_320x50_r1","\/1062898\/todamateriaBR_sticky_320x50_r2","\/1062898\/todamateriaBR_sticky_320x50_r3","\/1062898\/todamateriaBR_sticky_320x50_r4","\/1062898\/todamateriaBR_sticky_320x50_r5","\/1062898\/todamateriaBR_sticky_320x50_last"],"sizeVar":ss4,"sizeMappingVar":sm4}},mcs,nextAdUnitPath,mcslot;var gae=function(e,s){if(!window.localStorage || window.localStorage.getItem("sg_gpt_event")!=="1")return;if(typeof gtag!=="undefined"){gtag("event",e,{event_category:"Sg_GPT",event_label:s.getAdUnitPath(),non_interaction:true})}else if(typeof ga!=="undefined")ga("send","event","Sg_GPT",e,s.getAdUnitPath(),0,{nonInteraction:true})};googletag.pubads().addEventListener("impressionViewable",function(e){gae("ImpressionViewable",e.slot)});googletag.pubads().addEventListener("slotRenderEnded",function(e){gae("SlotRenderEnded",e.slot)})
+                function setDelay(e, slotOptDiv){
+                    if(e.slot.getSlotElementId()===slotOptDiv){
+                        const mcs=mc[slotOptDiv] || false;
+                        let nextAdUnitPath=mcs.adUnitPaths[0] || false;
+                        setTimeout(function(){
+                            if(nextAdUnitPath){
+                                googletag.destroySlots([e.slot]);
+                                mcslot=googletag.defineSlot(nextAdUnitPath, mcs.sizeVar, slotOptDiv);
+                                if(mcs.sizeMappingVar){
+                                    mcslot.defineSizeMapping(mcs.sizeMappingVar);
+                                }
+                                if(e.slot.getCollapseEmptyDiv()!==null){
+                                    mcslot.setCollapseEmptyDiv(e.slot.getCollapseEmptyDiv());
+                                }
+                                mcslot.addService(googletag.pubads());
+                                googletag.display([mcslot][0]);
+                                googletag.pubads().refresh([mcslot]);
+                                mcs.adUnitPaths.splice(mcs.adUnitPaths,1);
+                                mc[slotOptDiv].adUnitPaths=mcs.adUnitPaths;
+                            }else{
+                                googletag.pubads().refresh([mcslot]);
+                            }
+                        },1e3*mcs.reloadTime);
+                    }
+                }
+                for (let i = 0; i < Object.keys(mc).length; i++) {
+                    const el = Object.keys(mc)[i];
+                    googletag.pubads().addEventListener("impressionViewable",function(e){
+                        if(el === e.slot.getSlotElementId()){
+                            setDelay(e,el);
+                        }
+                    })
+                }
+            ;window.Sg_GPT_get_slots=function(){return slots};})})()</script>
+			<script>
+            var _comscore = _comscore || [];
+            _comscore.push({ c1: "2", c2: "21145335" });
+            _comscore.push({ c1: "8", c2: "21145335" ,c3: "1111" });
+            (function() {
+                    
+                if (!("localStorage" in window)) {
+                  window.localStorage = {
+                    _data: {},
+                    setItem: function(id, val) { return this._data[id] = String(val) },
+                    getItem: function(id) { return this._data.hasOwnProperty(id) ? this._data[id] : null }
+                  }
+                }
+            
+                var loadScript = function(){
+                    if(eu == "0") {
+                        var s = document.createElement("script"), el = document.getElementsByTagName("script")[0];
+                        s.async = true;
+                        s.src = "https://sb.scorecardresearch.com/beacon.js";
+                        el.parentNode.insertBefore(s, el);
+                    }
+                };
+            
+                var eu = localStorage.getItem("sg_eu");
+            
+                if(eu === null) {
+                    var request = new XMLHttpRequest();
+                    request.open("GET", window.location.protocol + "//eu.7gra.us/", true);
+                    request.onreadystatechange = function() {
+                      if (this.readyState === 4 && this.status === 200) {
+                         eu = this.responseText;
+                         localStorage.setItem("sg_eu", eu)
+                         loadScript();
+                      }
+                    };
+                    request.send();
+            
+                }
+            
+                loadScript();
+                    
+            })();
+            </script>			
+                    <script>
+                        (function() {
+
+                            var loadBar = function(isEu) {
+                                if(isEu) {
+                                    var s = document.createElement("script")
+                                    var el = document.getElementsByTagName("script")[0];
+                                    s.src = "https://7gra.us/consentbar/consent-bar.min.js?v=7";
+                                    el.parentNode.insertBefore(s, el);
+
+                                    var iterator = 0;
+                                    var initConsentBar = setInterval(function() {
+                                       if (typeof window.ConsentBar !== "undefined" || iterator++ > 100) {
+                                        clearInterval(initConsentBar);
+                                         window.consentBar = new ConsentBar({"enable":true,"blocking":false,"language":"pt","privacy_page":"\/politica-de-privacidade\/"});
+                                         window.consentBar.showBar();
+                                       }
+                                    }, 100);
+                                }
+                            }
+
+                            window[window.attachEvent ? "attachEvent" : "addEventListener"](window.attachEvent ? "onload" : "load", function() {
+                                var eu = localStorage.getItem("sg_eu");
+                                var btn = document.getElementsByClassName("cookies_manager");
+                                if(btn.length > 0) {
+                                    var btnStyle = "color:#286fb0; text-decoration: underline; cursor: pointer";
+                                    btn[0].style.cssText = btnStyle;
+                                }
+
+                                if(eu === null) {
+                                var request = new XMLHttpRequest();
+                                request.open("GET", window.location.protocol + "//eu.7gra.us/", true);
+                                request.onreadystatechange = function() {
+                                  if (this.readyState === 4 && this.status === 200) {
+                                     eu = this.responseText;
+                                     localStorage.setItem("sg_eu", eu);
+
+                                     loadBar(eu == "1");
+                                  }
+                                };
+                                    request.send();
+                                }else {
+                                    loadBar(eu == "1");
+                                }
+
+                                var iterator = 0;
+                                var isConsentBarRunning = setInterval(function() {
+                                    if (typeof window.ConsentBar !== "undefined" || iterator++ > 100) {
+                                        clearInterval(isConsentBarRunning);
+
+                                        if(btn.length > 0) {
+                                            btn[0].onclick = function() {
+                                                window.consentBar.showBar(true);
+                                            }
+                                        }
+                                    }
+                                }, 100);
+                            }, false);
+                        })();
+                    </script>
+                
+<sg-bhof
+    projectUrl="https://www.todamateria.com.br"
+    contentUrl="/tabela-periodica/"
+    backofficeUrl="https://www.todamateria.com.br/backoffice/post.php?id={id}"
+    projectId="48"
+    contentType="articles"
+    contentId="105"
+    contentData='{
+        "datePublished":"2013-08-16 11:37:56",
+        "dateUpdated":"2021-03-18 06:47:02"
+    }'
+    style="display:none"
+    ></sg-bhof>
+</body>
+</html>
